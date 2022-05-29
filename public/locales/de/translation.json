@@ -1,0 +1,10 @@
+{
+  "cookies": {
+    "text": "Diese Website verwendet Cookies, um die Benutzererfahrung zu verbessern. ",
+    "buttonAccept": "OK"
+  },
+  "startPage": {
+    "part1": "Ändere <1>src/App.js</1> und speichere um neu zu laden.",
+    "part2": "Lerne React"
+  }
+}

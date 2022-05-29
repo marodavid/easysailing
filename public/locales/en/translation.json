@@ -1,0 +1,10 @@
+{
+  "cookies": {
+    "text": "This website uses cookies to enhance the user experience. ",
+    "buttonAccept": "OK"
+  },
+  "startPage": {
+    "part1": "Edit <1>src/App.js</1> and save to reload.",
+    "part2": "Learn React"
+  }
+}
