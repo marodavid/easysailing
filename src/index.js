@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter} from "react-router-dom";
-import { initializeApp } from 'firebase/app'
-import { getAnalytics } from 'firebase/analytics'
+// import { initializeApp } from 'firebase/app'
+// import { getAnalytics } from 'firebase/analytics'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 import './i18n';
 // import WrappedApp from "./App";
 import Portada from "./components/portada/Portada";
+import ReactGA from 'react-ga'
 
 const firebaseConfig = {
   apiKey: "AIzaSyBlUMLoJB2zMskCgeFb1Ky0NSqH81k4VLc",
@@ -18,8 +19,8 @@ const firebaseConfig = {
   appId: "1:872348962613:web:8a12df83f1c5b43a34c67c",
   measurementId: "G-E0N5TTD7QD"
 };
-
-const app = initializeApp(firebaseConfig);
+ReactGA.initialize('G-E0N5TTD7QD')
+// const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
