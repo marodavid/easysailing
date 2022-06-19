@@ -12,7 +12,9 @@ import nudosfondo from '../../images/portada/nudosFondoPantalla.jpg'
 import portada2 from '../../images/portada/2-licenciaNavegacion.png'
 import portada3 from '../../images/portada/3-precio.png'
 import portada4 from '../../images/portada/4-contacta.png'
+import portada5 from '../../images/portada/5-flyerLicencia.png'
 import motoagua from '../../images/portada/motoagua.jpg'
+import barcoAlquiler from '../../images/portada/fotoBarco.jpg'
 
 
 const ImagenesFlyer = styled('img')(({ theme }) => ({
@@ -94,8 +96,28 @@ function Portada() {
 				</Grid>
 				<Grid item xs={1} sm={1} md={1} lg={0.5} />
 
+				{/*<Grid item xs={12} sm={12} md={12} lg={12}>*/}
+				{/*	<div style={{height:'100px'}}/>*/}
+				{/*</Grid>*/}
+				{/*<Grid item xs={1} sm={1} md={1} lg={0.5} />*/}
 				<Grid item xs={12} sm={12} md={12} lg={12}>
-					<div style={{height:'100px'}}/>
+					<div align={'center'} style={{height: '400px'}}>
+						<TypographyTitulos
+							variant="h3"
+							underline="none"
+							color={'white'}
+						>
+							{'¿Aún tienes dudas?'}
+						</TypographyTitulos>
+						<br/>
+						<ImagenesFlyer
+							src={ portada5 }
+							alt={''}
+						/>
+					</div>
+				</Grid>
+				<Grid item xs={12} sm={12} md={12} lg={12} alignItems='center'>
+					<div align="center" style={{height: '80px'}} />
 				</Grid>
 				<Grid item xs={12} sm={12} md={12} lg={12}>
 					<div align={'center'} style={{height: '400px'}}>
@@ -113,6 +135,7 @@ function Portada() {
 						/>
 					</div>
 				</Grid>
+				{/*<Grid item xs={1} sm={1} md={1} lg={0.5} />*/}
 
 				{/* TABARCA */}
 				<Grid item xs={12} sm={12} md={12} lg={12} alignItems='center'>
@@ -147,7 +170,7 @@ function Portada() {
 					<div align="center" style={{height: '50px'}} />
 				</Grid>
 				<Grid item xs={1} sm={1} md={1} lg={1} />
-				<Grid item xs={10} sm={10} md={10} lg={10}>
+				<Grid item xs={10} sm={10} md={10} lg={5}>
 					<div align={'center'}>
 						<TypographyTitulos
 							variant="h3"
@@ -159,6 +182,22 @@ function Portada() {
 						<br/>
 						<ImagenesFlyer
 							src={ motoagua }
+							alt={''}
+						/>
+					</div>
+				</Grid>
+				<Grid item xs={10} sm={10} md={10} lg={5}>
+					<div align={'center'}>
+						<TypographyTitulos
+							variant="h3"
+							underline="none"
+							color={'white'}
+						>
+							{'Te alquilamos una embarcación'}
+						</TypographyTitulos>
+						<br/>
+						<ImagenesFlyer
+							src={ barcoAlquiler }
 							alt={''}
 						/>
 					</div>
