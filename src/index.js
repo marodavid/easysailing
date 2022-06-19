@@ -7,6 +7,7 @@ import './index.css'
 import reportWebVitals from './reportWebVitals'
 import './i18n';
 import WrappedApp from "./App";
+import Portada from "./components/portada/Portada";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBlUMLoJB2zMskCgeFb1Ky0NSqH81k4VLc",
@@ -25,7 +26,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <WrappedApp />
+      {/*<WrappedApp />*/}
+      <Portada/>
     </BrowserRouter>
   </React.StrictMode>
 );
