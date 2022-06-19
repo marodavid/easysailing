@@ -84,9 +84,9 @@ const ImagenLogoLeft = styled('img')(({ theme }) => ({
   flex: 1,
 }));
 
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
+// const Transition = React.forwardRef(function Transition(props, ref) {
+//   return <Slide direction="up" ref={ref} {...props} />;
+// });
 
 function GeneralMenu(props) {
   const { window } = props

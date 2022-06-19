@@ -6,7 +6,7 @@ import { getAnalytics } from 'firebase/analytics'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 import './i18n';
-import WrappedApp from "./App";
+// import WrappedApp from "./App";
 import Portada from "./components/portada/Portada";
 
 const firebaseConfig = {
@@ -20,7 +20,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

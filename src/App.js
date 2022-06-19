@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 import CookieConsent from "react-cookie-consent";
 import logo from './logo.svg';
 import './App.css';
