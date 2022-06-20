@@ -55,6 +55,9 @@ const TypographyCenter = styled(Typography)(({ theme }) => ({
   justifyContent: 'flex-end',
   flex: 1,
   display: 'flex',
+  [theme.breakpoints.down('md')]: {
+    fontSize: 20
+  }
 }));
 
 const DivRight = styled('div')(({ theme }) => ({
@@ -69,6 +72,27 @@ const LinkRight = styled(Link)(({ theme }) => ({
   underline: false,
 }));
 
+const FacebookIconSize = styled(FacebookIcon)(({ theme}) => ({
+  color: 'blue',
+  fontSize: 35,
+  [theme.breakpoints.down('md')]: {
+    fontSize: 25,
+  }
+}));
+const InstagramIconSize = styled(InstagramIcon)(({ theme}) => ({
+  color: 'orange',
+  fontSize: 35,
+  [theme.breakpoints.down('md')]: {
+    fontSize: 25,
+  }
+}));
+const WhatsAppIconSize = styled(WhatsAppIcon)(({ theme}) => ({
+  color: 'lightGreen',
+  fontSize: 35,
+  [theme.breakpoints.down('md')]: {
+    fontSize: 25,
+  }
+}));
 // const LinkLeft = styled(Link)(({ theme }) => ({
 //   color: theme.palette.white,
 //   underline: false,
@@ -82,6 +106,9 @@ const ImagenLogoLeft = styled('img')(({ theme }) => ({
   maxWidth: '30%',
   justifyContent: 'flex-end',
   flex: 1,
+  [theme.breakpoints.down('md')]:{
+    maxWidth: '50%'
+  }
 }));
 
 // const Transition = React.forwardRef(function Transition(props, ref) {
@@ -121,21 +148,20 @@ function GeneralMenu(props) {
             </Grid>
             <Grid item xs={5} sm={5} md={5} lg={5}>
               <DivCenter>
-              <TypographyCenter
-                variant="h4"
-                underline="none"
-              >
-                {'Easy Sealing'}
-              </TypographyCenter>
-            </DivCenter>
+                <TypographyCenter>
+                  {'Easy Sealing'}
+                </TypographyCenter>
+              </DivCenter>
             </Grid>
-            <Grid item xs={1} sm={1} md={1} lg={1} />
+            <Grid item xs={0.5} sm={0.5} md={0.5} lg={0.5} />
             <Grid item xs={2} sm={2} md={2} lg={2}>
               <ImagenLogoLeft
                 src={ESLogo}
                 alt={''}
               />
             </Grid>
+            <Grid item xs={0.5} sm={0.5} md={0.5} lg={0.5} />
+
             <Grid item xs={2} sm={2} md={2} lg={2}>
               <DivRight>
                 <LinkRight
@@ -146,7 +172,8 @@ function GeneralMenu(props) {
                   target="_blank"
                 >
                   <Tooltip title={'Facebook'}>
-                    <FacebookIcon fontSize={'large'}/>
+                    <FacebookIconSize />
+                    {/*<FacebookIcon fontSize={'large'}/>*/}
                     {/*<SvgIcon fontSize={'large'} color={"secondary"} component={facebook} viewBox="0 0 300 238.3" alt={'Facebook'}/>*/}
                   </Tooltip>
                 </LinkRight>
@@ -159,7 +186,8 @@ function GeneralMenu(props) {
                 >
                   <Tooltip title={'Instagram'}>
                     {/*<SvgIcon fontSize={'large'} component={instagram} viewBox="0 0 150 119.15" alt={'Instagram'}/>*/}
-                    <InstagramIcon fontSize={'large'} color={'warning'}/>
+                    {/*<InstagramIcon fontSize={'large'} color={'warning'}/>*/}
+                    <InstagramIconSize />
                   </Tooltip>
                 </LinkRight>
                 <LinkRight
@@ -170,21 +198,10 @@ function GeneralMenu(props) {
                   target="_blank"
                 >
                   <Tooltip title={'Whatsapp'}>
-                    <WhatsAppIcon fontSize={'large'} color={'success'}/>
+                    {/*<WhatsAppIcon fontSize={'large'} style={{ color: 'lightGreen' }}/>*/}
+                    <WhatsAppIconSize />
                   </Tooltip>
                 </LinkRight>
-                {/*<Tooltip title={'Translate'}>*/}
-                {/*  <LinkRight*/}
-                {/*    variant="h6"*/}
-                {/*    underline="none"*/}
-                {/*    href={`https://translate.google.com/translate?sl=es&tl=en&u=https://labodica.es${location.pathname}`}*/}
-                {/*    rel="noopener noreferrer"*/}
-                {/*    target="_blank"*/}
-                {/*  >*/}
-                {/*    <span>Banderita</span>*/}
-                {/*    <IconFlagUK fontSize={'large'}/>*/}
-                {/*  </LinkRight>*/}
-                {/*</Tooltip>*/}
               </DivRight>
             </Grid>
           </Grid>
