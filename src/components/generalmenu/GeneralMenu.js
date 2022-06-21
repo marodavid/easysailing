@@ -193,7 +193,7 @@ function GeneralMenu(props) {
                 <LinkRight
                   variant="h6"
                   underline="none"
-                  href="https://wa.me/0034624158428/"
+                  href="https://wa.me/+34624158428/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
