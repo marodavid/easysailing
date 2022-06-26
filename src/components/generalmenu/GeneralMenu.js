@@ -149,7 +149,7 @@ function GeneralMenu(props) {
             <Grid item xs={5} sm={5} md={5} lg={5}>
               <DivCenter>
                 <TypographyCenter>
-                  {'Easy Sealing'}
+                  {'Easy Sailing'}
                 </TypographyCenter>
               </DivCenter>
             </Grid>
