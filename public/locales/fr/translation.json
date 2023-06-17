@@ -6,5 +6,69 @@
   "startPage": {
     "part1": "Modifiez <1>src/App.js</1> et enregistrez pour recharger.",
     "part2": "Apprendre React"
+  },
+  "idioma": "fr",
+  "cursos": {
+    "portada": "Cursos y Licencias",
+    "LicenciaNavegacion": {
+      "Reserva": "Hola, quiero reservar plaza para la Licencia de Navegación.",
+      "ReservaBoton": "Reservar ahora",
+      "Titulo":"Licence de Navigation",
+      "Subtitulo": "La licence de navigation est la première et la seule qualification récréative qui n'a pas d'examen et n'expire pas et peut être obtenue à partir de 16 ans avec une autorisation parentale.",
+      "Parrafo1": "La licence de navigation est la première et la seule qualification récréative qui n'a pas d'examen et n'expire pas et peut être obtenue à partir de 16 ans avec une autorisation parentale.",
+      "Parrafo2": "Autorise au gouvernement des bateaux de plaisance jusqu'à 6 mètres de longueur pour la navigation côtière à une distance maximale de 2 milles d'un port ou d'un lieu d'abri en navigation de jour.",
+      "Parrafo3": "Vous pouvez également prendre des jet skis sans limite de puissance.",
+      "Parrafo4": "Pour obtenir la licence, un examen médical est requis.",
+      "Parrafo5": "Easy Sailing a réussi à conclure des accords pour que ses élèves puissent effectuer cette reconnaissance au prix le moins cher du marché (nous vous fournissons toutes les informations après confirmation de la réservation).",
+      "Parrafo6": "**Precio por persona 80 eur",
+      "Parrafo7": "**Oferta pareja a 75 eur cada uno.",
+      "Bulletpoint": {
+        "Heading": "**Atribuciones Licencia de Navegación",
+        "Punto1Titulo": "**Hasta 6 metros de eslora",
+        "Punto1Texto": "**La Licencia de Navegación permite gobernar embarcaciones de un máximo de 6 metros de eslora.",
+        "Punto2Titulo": "**Hasta 2 millas de la costa",
+        "Punto2Texto": "Cette licence vous permettra également de naviguer jusqu’à 2 milles d’un abri.",
+        "Punto3Titulo": "Navigation de jour",
+        "Punto3Texto": "En effet cette licence vous permettra exclusivement la navigation de jour.",
+        "Punto4Titulo": "**Sin límite de potencia",
+        "Punto4Texto": "**La Licencia de Navegación no establece límite de potencia en las embarcaciones, ni motos de agua.",
+        "Punto5Titulo": "Jet ski",
+        "Punto5Texto": "Cette licence vous permettra de piloter tout type de jets ski."
+      }
+    },
+    "PerVela": {
+      "Titulo": "P.E.R.",
+      "Subtitulo": "**Titulo de Patron de Embarcaciones Recreativas",
+      "Parrafo1": "Nous faisons tout notre possible pour amener la pratique de la voile à El Campello.",
+      "Parrafo2": "Si vous êtes intéressé à recevoir des cours de voiliers , envoyez-nous un message et nous vous contacterons dès que cette modalité sera disponible."
+    },
+    "LnParticular": {
+      "Titulo": "LN Particulier Intensif",
+      "Subtitulo": "Easy Sailing est l'école de référence pour notre public étranger, pouvant fournir un service en Espagnol, en Anglais\n, en Français et en Allemand.",
+      "Parrafo1": "Easy Sailing est l'école de référence pour notre public étranger, pouvant fournir un service en Espagnol, en Anglais\n, en Français et en Allemand.",
+      "Parrafo2": "En réponse à la demande et aux besoins de notre public, nous sommes la première école de la province d'Alicante\nà proposer la licence de navigation de façon intensive.",
+      "Parrafo3": "Elle se fait en binôme avec un total de 2 élèves par groupe, pouvant choisir la langue dans laquelle le cours est\ndispensé entre l'espagnol, l'anglais et le français et d'une durée de 4 heures pour pratiquer de manière intensive et\nprivée, toutes les manœuvres nécessaires afin de naviguer correctement sur un bateau de 6 mètres de long.",
+      "Parrafo4": "Prix par personne : 150 euros."
+    },
+    "ClasesPerfec": {
+      "Titulo": "Cours de Perfectionnement",
+      "Subtitulo": "Si vous avez déjà votre licence de navigation, mais que par manque de pratique vous ne vous sentez pas suffisamment en confiance pour diriger un bateau, nous avons plusieurs options pour vous.",
+      "Parrafo1": "Si vous avez déjà votre licence de navigation, mais que par manque de pratique vous ne vous sentez pas suffisamment en confiance pour diriger un bateau, nous avons plusieurs options pour vous.",
+      "ParticularesTitulo": "Particuliers",
+      "ParticularesTexto": "cours particuliers à 40 euros de l'heure.",
+      "GruposTitulo": "Groupe",
+      "GruposTexto": "groupes de 4 personnes d'une durée de 2 heures pour 40 euros par personne.",
+      "MixtoTitulo": "Mixte",
+      "MixtoTexto": "nous réalisons avec vous un bilan de 20 minutes, nous vous fournirons un guide pratique d'instruction et nous vous confierons un bateau semi rigide durant 2 heures, que vous pourrez utiliser pour 5 personnes maximum et ainsi pouvoir réviser sur faire vous-même les manœuvres utiles au bon fonctionnement d’un bateau tout en ayant la sécurité d’un semi rigide.",
+      "MixtoPrecio": "Prix 99 euros ( en tout )."
+    },
+    "IntroNavegacion": {
+      "Titulo": "Initiation Navigation pour les Groupes",
+      "Subtitulo": "Si vous souhaitez faire un baptême nautique et découvrir si c'est votre élément, vivez l'expérience d'initiation à la\nnavigation à travers cette activité de 2 heures à travers les criques de Campello guidée par un moniteur\nprofessionnel.",
+      "Parrafo1": "Si vous souhaitez faire un baptême nautique et découvrir si c'est votre élément, vivez l'expérience d'initiation à la\nnavigation à travers cette activité de 2 heures à travers les criques de Campello guidée par un moniteur\nprofessionnel.",
+      "Parrafo2": "Tarif : 40 euros par personne."
+    }
   }
+
+
 }

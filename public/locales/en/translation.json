@@ -6,5 +6,71 @@
   "startPage": {
     "part1": "Edit <1>src/App.js</1> and save to reload.",
     "part2": "Learn React"
+  },
+  "idioma": "en-gb",
+  "cursos": {
+    "portada": "Cursos y Licencias",
+    "LicenciaNavegacion": {
+      "Reserva": "***Hola, quiero reservar plaza para la Licencia de Navegación.",
+      "ReservaBoton": "Reservar ahora",
+      "Titulo":"***Licencia de Navegacion",
+      "Subtitulo": "Primera titulación recreativa y única que no tiene examen y no caduca y se puede obtener a partir de los 16 años con autorización de los padres.",
+      "Parrafo1": "La Licencia de navegación es la primera titulación recreativa y única que no tiene examen y no caduca y se puede\nobtener a partir de los 16 años con autorización de los padres.",
+      "Parrafo2": "Habilita para el gobierno de embarcaciones de recreo de hasta 6 metros de eslora para la navegación costera a\nuna distancia máxima de 2 millas de un puerto o lugar de abrigo en navegación diurna.",
+      "Parrafo3": "Además podrás llevar motos náuticas sin límite de potencia.",
+      "Parrafo4": "Para la obtención de la Licencia se exige que se realice un reconocimiento médico.",
+      "Parrafo5": "Easy Sailing ha conseguido cerrar acuerdos para que sus alumnos puedan realizar dicho reconocimiento al precio\nmás económico del mercado (te facilitamos todos los datos tras confirmar la reserva).",
+      "Parrafo6": "Precio por persona 80 eur",
+      "Parrafo7": "Oferta pareja a 75 eur cada uno.",
+      "Bulletpoint": {
+        "Heading": "Atribuciones Licencia de Navegación",
+        "Punto1Titulo": "Hasta 6 metros de eslora",
+        "Punto1Texto": "La Licencia de Navegación permite gobernar embarcaciones de un máximo de 6 metros de eslora.",
+        "Punto2Titulo": "Hasta 2 millas de la costa",
+        "Punto2Texto": "La distancia máxima permitida para alejarse de la costa con la Licencia de Navegación son 2 millas.",
+        "Punto3Titulo": "Navegacion diurna",
+        "Punto3Texto": "Con la Licencia de Navegación solo está permitida la navegación diurna",
+        "Punto4Titulo": "Sin límite de potencia",
+        "Punto4Texto": "La Licencia de Navegación no establece límite de potencia en las embarcaciones, ni motos de agua.",
+        "Punto5Titulo": "Motos de agua",
+        "Punto5Texto": "La Licencia de Navegación habilita para gobernar todo tipo de motos náuticas."
+      }
+    },
+    "PerVela": {
+      "Titulo": "P.E.R.",
+      "Subtitulo": "Titulo de Patron de Embarcaciones Recreativas",
+      "Parrafo1": "Estamos haciendo todo lo posible para traer la vela de crucero a Campello.",
+      "Parrafo2": "Si estás interesado en recibir clases de vela de crucero, mandanos un mensaje y te contactaremos tan pronto tengamos disponible esta modalidad."
+    },
+    "LnParticular": {
+      "Titulo": "LN Particular Intensiva",
+      "Subtitulo": "Somos la primera escuela de la provincia de Alicante en ofrecer la Licencia de Navegación Intensiva.",
+      "Parrafo1": "Easy Sailing es la escuela de referencia para nuestro público extranjero al ser capaz de dar servicio tanto en Castellano como Inglés, Francés y Alemán.",
+      "Parrafo2": "Atendiendo a la demanda y necesidades de nuestro público, somos la primera escuela de la provincia de Alicante en ofrecer la Licencia de Navegación Intensiva.",
+      "Parrafo3": "Se realiza en parejas con un total de 2 alumnos por grupo, pudiendo elegir el idioma en el que se imparte la clase entre castellano, inglés y francés y con una duración de 4 horas para practicar de forma intensiva y clase particular, todas las maniobras necesarias para gobernar de forma correcta una embarcación de 6 metros de eslora.",
+      "Parrafo4": "Precio por persona: 150 euros."
+    },
+    "ClasesPerfec": {
+      "Titulo": "Clases Perfeccionamiento",
+      "Subtitulo": "Si ya cuentas con tu Licencia de Navegación, pero por falta de práctica no te sientes con la suficiente\nseguridad de gobernar una embarcación, tenemos varias opciones para ti.",
+      "Parrafo1": "Si ya cuentas con tu Licencia de Navegación, pero por falta de práctica no te sientes con la suficiente\nseguridad de gobernar una embarcación, tenemos varias opciones para ti.",
+      "ParticularesTitulo": "Particulares",
+      "ParticularesTexto": "clases particulares a 40 euros la hora.",
+      "GruposTitulo": "Grupos",
+      "GruposTexto": "grupos de 4 personas con 2 horas de duración por 40 euros por persona.",
+      "MixtoTitulo": "Mixto",
+      "MixtoTexto": "Realizamos contigo una revisión de 20 minutos, te facilitamos una guía de instrucciones prácticas y ponemos a tu disposición una neumática 2 horas, que podréis utilizar para un máximo de 5 personas y así poder repasar por vuestra cuenta las maniobras que queráis con la seguridad que una neumática ofrece.",
+      "MixtoPrecio": "Precio 99 euros."
+    },
+    "IntroNavegacion": {
+      "Titulo": "Intro Navegación para Grupos",
+      "Subtitulo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "Parrafo1": "Si quieres tener un bautizo náutico y descubrir si este es tu elemento, vive la experiencia de introducción a la navegación a través de esta actividad de 2 horas de duración por la calas de Campello guiada por un instructor profesional.",
+      "Parrafo2": ""
+    }
+
+
+
   }
+
 }
