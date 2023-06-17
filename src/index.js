@@ -20,7 +20,6 @@ import Reviews from "./components/googlereviews/Reviews";
 import { useTranslation, Trans } from 'react-i18next';
 // import WrappedApp from "./App";
 import Portada from './components/portada/Portada'
-import Contacto from "./components/formularios/Contacto";
 import GeneralMenu from "./components/generalmenu/GeneralMenu";
 import MenuBar from "./components/generalmenu/MenuBar";
 import ReviewsCarousel from "./components/googlereviews/ReviewsCarousel";
