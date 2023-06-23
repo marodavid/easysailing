@@ -38,6 +38,9 @@ const FlagIconsGB = styled(GB)(( { theme }) => ({
 	flexShrink: 0,
 	transition: 'fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
 	fontSize: '2.1875rem',
+	[theme.breakpoints.down('md')]: {
+		fontSize: '1.5rem',
+	}
 }))
 
 // const FlagIconsDE = styled(DE)(( { theme }) => ({
@@ -61,6 +64,9 @@ const FlagIconsFR = styled(FR)(( { theme }) => ({
 	flexShrink: 0,
 	transition: 'fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
 	fontSize: '2.1875rem',
+	[theme.breakpoints.down('md')]: {
+		fontSize: '1.5rem',
+	}
 }))
 
 const FlagIconsES = styled(ES)(( { theme }) => ({
@@ -72,6 +78,10 @@ const FlagIconsES = styled(ES)(( { theme }) => ({
 	flexShrink: 0,
 	transition: 'fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
 	fontSize: '2.1875rem',
+	[theme.breakpoints.down('md')]: {
+		fontSize: '1.5rem',
+	}
+
 }))
 //
 // const lngs = {
