@@ -8,8 +8,18 @@
     "part2": "Apprendre React"
   },
   "idioma": "fr",
+  "menuOpciones": {
+    "inicio": "***Inicio",
+    "cursos": "***Cursos",
+    "actividades": "***Actividades",
+    "alquileres": "***Alquileres",
+    "whoweare": "***Quienes somos",
+    "colaboraciones": "***Colaboraciones",
+    "contacto": "***Contacto"
+  },
   "cursos": {
     "portada": "Cursos y Licencias",
+    "introduccion": "an Canáataca ancantrarás la mayar afarta da carsas y práctacas para canvartarta an patrón. Las majaras anstractaras, anstalacaanas y barcas ascaala, para qaa adqaaaras la axparaancaa nacasaraa, nas han canvartada an la pramara ascaala dal país an númara da alamnas. Más da 40.000 antagaas alamnas nas avalan. ¿Qaaaras sar patrón? alaga ta tatalacaón:",
     "LicenciaNavegacion": {
       "Reserva": "Hola, quiero reservar plaza para la Licencia de Navegación.",
       "ReservaBoton": "Reservar ahora",
@@ -67,6 +77,51 @@
       "Subtitulo": "Si vous souhaitez faire un baptême nautique et découvrir si c'est votre élément, vivez l'expérience d'initiation à la\nnavigation à travers cette activité de 2 heures à travers les criques de Campello guidée par un moniteur\nprofessionnel.",
       "Parrafo1": "Si vous souhaitez faire un baptême nautique et découvrir si c'est votre élément, vivez l'expérience d'initiation à la\nnavigation à travers cette activité de 2 heures à travers les criques de Campello guidée par un moniteur\nprofessionnel.",
       "Parrafo2": "Tarif : 40 euros par personne."
+    }
+  },
+  "alquileres": {
+    "portada": "Locations",
+    "introduccion": "***an Canáataca ancantrarás la mayar afarta da carsas y práctacas para canvartarta an patrón. Las majaras anstractaras, anstalacaanas y barcas ascaala, para qaa adqaaaras la axparaancaa nacasaraa, nas han canvartada an la pramara ascaala dal país an númara da alamnas. Más da 40.000 antagaas alamnas nas avalan. ¿Qaaaras sar patrón? alaga ta tatalacaón:",
+    "precio": "Prix",
+    "botonReserva": "RESERVEZ SUR WHATSAPP",
+    "botonFotos": "VOIR PLUS DE PHOTOS",
+    "hulk": {
+      "titulo": "HULK",
+      "modelo": "NEUMÁTICA BOMBARD 500 SUNRIDER 2023",
+      "motor": "MOTEUR SUZUKY 15 CV",
+      "eslora": "5 METROS",
+      "capacidad": "5 PERSONAS",
+      "gasolina2": "10 € (2 Horas)",
+      "gasolina4": "20 € (4 Horas)",
+      "gasolina9": "30 € (9 Horas)",
+      "titulacion": "NO REQUIERE TITULACIÓN",
+      "precio2": "99 €",
+      "precio4": "170 €",
+      "precio9": "220 €",
+      "notaPrecio" : "Todas las tarifas incluyen 20 minutos de formación adicional de instructor náutico",
+      "reserva": "Hola, tengo interés en alquilar el barco HULK."
+    },
+    "easy_sailing": {
+      "titulo": "EASY SAILING",
+      "modelo": "MOTORA QUICKSILVER 605 OPEN 2018",
+      "motor": "MOTOR MERCURY 115 CV",
+      "eslora": "6 METROS",
+      "capacidad": "7 PERSONAS",
+      "titulacion": "TITULACIÓN REQUERIDA: LICENCIA DE NAVEGACIÓN",
+      "precio4": "4 HORAS: 200",
+      "precio9": "9 HORAS: 300",
+      "reserva": "Hola, tengo interés en alquilar el barco EASY SAILING."
+    },
+    "alma": {
+      "titulo": "ALMA",
+      "modelo": "MOTORA ASTILUX 600 OPEN 2023",
+      "motor": "MOTOR SUZUKY 115 CV",
+      "eslora": "6 METROS",
+      "capacidad": "8 PERSONAS",
+      "titulacion": "TITULACIÓN REQUERIDA: LICENCIA DE NAVEGACIÓN",
+      "precio4": "4 HORAS: 250",
+      "precio9": "9 HORAS: 350",
+      "reserva": "Hola, tengo interés en alquilar el barco ALMA."
     }
   },
   "opiniones": {

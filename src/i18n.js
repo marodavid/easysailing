@@ -10,7 +10,7 @@ import Backend from 'i18next-http-backend';
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next)
 	.init({
 		debug: true,
-		fallbackLng: 'en',
+		fallbackLng: 'es',
 		interpolation: {
 			escapeValue: false, // not needed for react as it escapes by default
 		},
