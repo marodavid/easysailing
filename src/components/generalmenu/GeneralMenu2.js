@@ -345,20 +345,21 @@ function GeneralMenu2(props) {
 								</HashLink>
 							</Grid>
 							<Grid item xs={4} sm={4} md={2} lg={2}>
-								<MenuLink onClick={() => alert('proximamente')}>
+								<HashLink to='/#alquileres' style={{textDecoration: 'none'}}>
 								<Typography2>
 									{/*{'ALQUILERES'}*/}
 									{t('menuOpciones.alquileres')}
 								</Typography2>
-								</MenuLink>
+								</HashLink>
 							</Grid>
 							<Grid item xs={4} sm={4} md={2} lg={2}>
-								<MenuLink onClick={() => alert('proximamente')}>
+								{/*<MenuLink onClick={() => alert('proximamente')}>*/}
+								<HashLink to='/#actividades' style={{textDecoration: 'none'}}>
 									<Typography2>
 									{/*{'EXPERIENCIAS'}*/}
 									{t('menuOpciones.actividades')}
 								</Typography2>
-								</MenuLink>
+								</HashLink>
 							</Grid>
 							<Grid item xs={4} sm={4} md={2} lg={2}>
 								<MenuLink onClick={() => alert('proximamente')}>
