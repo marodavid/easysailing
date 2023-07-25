@@ -19,7 +19,6 @@ import CarouselES from './CarouselES'
 import PazCursoEasySailing from '../../images/cursos/PazCursoEasySailing.jpg'
 import VentanaVideo from "../ventanavideo/VentanaVideo";
 import CarouselOpiniones from "../googlereviews/CarouselOpiniones";
-import CarouselBarcos from "./CarouselBarcos";
 import {WhatsappOutlined, WhatsappRounded} from "@mui/icons-material";
 import WhatsappButton from "../whatsappbutton/WhatsappButton";
 import DialogContent from "@mui/material/DialogContent";
@@ -215,20 +214,16 @@ const Alquileres = () => {
 							</BarcoFeatures>
 							<BarcoPrecio>
 								<Grid container>
-									<Grid item xs={2} sm={2} md={2} />
-									<Grid item xs={4} sm={4} md={4}>
-
-										<span style={{color: 'orange', fontSize: '1.5em'}}>{'4 HORAS'}</span>
+									<Grid item xs={6} sm={6} md={6}>
+										<span style={{color: 'orange', fontSize: '1.5em'}}>{t('alquileres.alma.titulo4')}</span>
 										<div style={{topMargin: '1em'}} />
 										<span style={{color: '#00B4D8', fontSize: '2.25em'}}>{t('alquileres.alma.precio4')}</span>
-
 									</Grid>
-									<Grid item xs={4} sm={4} md={4}>
-										<span style={{color: 'orange', fontSize: '1.5em'}}>{'9 HORAS'}</span>
+									<Grid item xs={6} sm={6} md={6}>
+										<span style={{color: 'orange', fontSize: '1.5em'}}>{t('alquileres.alma.titulo9')}</span>
 										<div style={{topMargin: '1em'}} />
 										<span style={{color: '#00B4D8', fontSize: '2.25em'}}>{t('alquileres.alma.precio9')}</span>
 									</Grid>
-									<Grid item xs={2} sm={2} md={2} />
 									<Grid item xs={1} sm={1} md={2} />
 									<Grid item xs={10} sm={10} md={8}>
 										<a href={`https://api.whatsapp.com/send?phone=34624158428&amp;text=${t('alquileres.alma.reserva')}`} target="_blank" rel="noopener" style={{textDecoration: 'none'}}>
@@ -307,12 +302,12 @@ const Alquileres = () => {
 							<BarcoPrecio>
 								<Grid container id="alquileres">
 									<Grid item xs={6} sm={6} md={6}>
-										<span style={{color: 'orange', fontSize: '1.5em'}}>{'4 HORAS'}</span>
+										<span style={{color: 'orange', fontSize: '1.5em'}}>{t('alquileres.easy_sailing.titulo4')}</span>
 										<div style={{topMargin: '1em'}} />
 										<span style={{color: '#00B4D8', fontSize: '2.25em'}}>{t('alquileres.easy_sailing.precio4')}</span>
 									</Grid>
 									<Grid item xs={6} sm={6} md={6}>
-										<span style={{color: 'orange', fontSize: '1.5em'}}>{'9 HORAS'}</span>
+										<span style={{color: 'orange', fontSize: '1.5em'}}>{t('alquileres.easy_sailing.titulo9')}</span>
 										<div style={{topMargin: '1em'}} />
 										<span style={{color: '#00B4D8', fontSize: '2.25em'}}>{t('alquileres.easy_sailing.precio9')}</span>
 									</Grid>
@@ -404,18 +399,18 @@ const Alquileres = () => {
 								<Grid container>
 									<Grid item xs={4} sm={4} md={4}>
 
-										<span style={{color: 'orange', fontSize: '1.5em'}}>{'2 HORAS'}</span>
+										<span style={{color: 'orange', fontSize: '1.5em'}}>{t('alquileres.hulk.titulo2')}</span>
 										<div style={{topMargin: '1em'}} />
 										<span style={{color: '#00B4D8', fontSize: '2.25em'}}>{t('alquileres.hulk.precio2')}</span>
 
 									</Grid>
 									<Grid item xs={4} sm={4} md={4}>
-										<span style={{color: 'orange', fontSize: '1.5em'}}>{'4 HORAS'}</span>
+										<span style={{color: 'orange', fontSize: '1.5em'}}>{t('alquileres.hulk.titulo4')}</span>
 										<div style={{topMargin: '1em'}} />
 										<span style={{color: '#00B4D8', fontSize: '2.25em'}}>{t('alquileres.hulk.precio4')}</span>
 									</Grid>
 									<Grid item xs={4} sm={4} md={4}>
-										<span style={{color: 'orange', fontSize: '1.5em'}}>{'9 HORAS'}</span>
+										<span style={{color: 'orange', fontSize: '1.5em'}}>{t('alquileres.hulk.titulo9')}</span>
 										<div style={{topMargin: '1em'}} />
 										<span style={{color: '#00B4D8', fontSize: '2.25em'}}>{t('alquileres.hulk.precio9')}</span>
 									</Grid>
@@ -496,14 +491,14 @@ const Alquileres = () => {
 							underline="none"
 							color={'white'}
 						>
-							{'Descubre Tabarca'}
+							{t('alquileres.tabarca1')}
 						</TypographyTitulos>
 						<TypographyTitulos
 							variant="h3"
 							underline="none"
 							color={'white'}
 						>
-							{'con tu licencia de navegación'}
+							{t('alquileres.tabarca2')}
 						</TypographyTitulos>
 					</div>
 				</Grid>
@@ -514,6 +509,7 @@ const Alquileres = () => {
 				<Grid item xs={1} sm={1} md={2} lg={2} />
 
 			<Grid item xs={12} sm={12} md={12} >
+				<hr/>
 				<DivSeparator />
 			</Grid>
 
