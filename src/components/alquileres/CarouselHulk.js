@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -26,12 +26,9 @@ const useStyles = makeStyles((theme) => ({
 
 const CarouselHulk = () => {
 
-	const { t, i18n } = useTranslation();
+	const { i18n } = useTranslation();
 	const classes = useStyles();
 	const [language, setLanguage] = useState(i18n.language.substring(0,2));
-
-	console.log('language is: '+language);
-	console.log('language is: '+t('idioma'));
 
 	useEffect(() => {
 		const newLanguage = i18n.language.substring(0,2);

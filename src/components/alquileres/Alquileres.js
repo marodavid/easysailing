@@ -1,34 +1,32 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-import {styled} from "@mui/system"
-import {Button, Card, CardContent, CardMedia, Dialog, DialogTitle, Grid, Typography} from '@mui/material';
+import { styled } from "@mui/system"
+import {
+	Button,
+	Card,
+	CardContent,
+	CardMedia,
+	Dialog,
+	DialogActions,
+	DialogContent,
+	DialogTitle,
+	Grid,
+	Typography
+} from '@mui/material';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShip, faMotorcycle, faRulerHorizontal, faPeopleGroup, faIdCard, faCameraRetro, faGasPump } from "@fortawesome/free-solid-svg-icons";
-
-import whatsapplogo from './whatsapp-icon.svg'
+import { faShip, faRulerHorizontal, faPeopleGroup, faIdCard, faCameraRetro, faGasPump } from "@fortawesome/free-solid-svg-icons";
 
 import alma2 from '../../images/alquileres/astilux2.jpg'
 import hulk2 from '../../images/alquileres/bombard2.jpg'
 import quicksilver from '../../images/alquileres/quicksilver.jpg'
+import whatsapplogo from '../../images/alquileres/whatsapp-icon.svg'
+
 import CarouselHulk from './CarouselHulk'
 import CarouselAlma from './CarouselAlma'
 import CarouselES from './CarouselES'
-
-import PazCursoEasySailing from '../../images/cursos/PazCursoEasySailing.jpg'
 import VentanaVideo from "../ventanavideo/VentanaVideo";
-import CarouselOpiniones from "../googlereviews/CarouselOpiniones";
-import {WhatsappOutlined, WhatsappRounded} from "@mui/icons-material";
-import WhatsappButton from "../whatsappbutton/WhatsappButton";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import {LocalizationProvider} from "@mui/x-date-pickers";
-import {AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs";
-import {DatePicker} from "@mui/x-date-pickers/DatePicker";
-import dayjs from "dayjs";
-import TextField from "@mui/material/TextField";
-import DialogActions from "@mui/material/DialogActions";
 
 
 const CardStyled = styled(Card)(({ theme }) => ({
@@ -36,10 +34,6 @@ const CardStyled = styled(Card)(({ theme }) => ({
 	// '&:hover': {
 	// 	transform: 'scale(1.05)',
 	// },
-}));
-
-const LinkStyled = styled(Link)(({ theme }) => ({
-	textDecoration: 'none',
 }));
 
 const DivTituloCursos = styled('div')(({ theme }) => ({
@@ -72,13 +66,13 @@ const TypographyTituloIntroduccion= styled('div')(({ theme }) => ({
 	fontFamily: 'Reem Kufi Fun',
 	fontWeight: '500',
 	textAlign: 'center',
+	fontSize: '20px',
 }));
 
 const BarcoFeatures= styled('div')(({ theme }) => ({
 	fontFamily: 'Reem Kufi Fun',
 	fontWeight: '500',
 	marginTop: '1em',
-	// textAlign: 'center',
 }));
 
 const BarcoPrecio= styled('div')(({ theme }) => ({
@@ -88,21 +82,12 @@ const BarcoPrecio= styled('div')(({ theme }) => ({
 	textAlign: 'center',
 }));
 
-const DivBoton = styled('div')(({ theme }) => ({
-	display: "flex",
-	justifyContent: "center",
-	marginBottom: '10px',
-	marginTop: '15px',
-	width: '100%',
-}));
-
 const TypographyTitulos = styled(Typography)(({ theme }) => ({
 	fontFamily: 'Alegreya SC',
 	color: 'black',
 	[theme.breakpoints.down('md')]: {
 		maxWidth: '100%',
 		fontSize: '100%',
-		// maxHeight: '100%',
 	},
 }));
 
@@ -113,8 +98,6 @@ const SpanBarcoFeatures = styled('span')(({ theme }) => ({
 const IconoNaranja = styled(FontAwesomeIcon)(({ theme }) => ({
 	color: 'orange',
 }));
-
-
 
 const BotonWhatsapp = styled('div')(({ theme }) => ({
 	border: '2px solid #25d366',
@@ -133,14 +116,12 @@ const BotonFotos = styled('div')(({ theme }) => ({
 }));
 
 
-
-
 const Alquileres = () => {
 
-	const { t, i18n } = useTranslation();
-	const [openHulk, setOpenHulk] = React.useState(false);
-	const [openAlma, setOpenAlma] = React.useState(false);
-	const [openES, setOpenES] = React.useState(false);
+	const { t } = useTranslation();
+	const [openHulk, setOpenHulk] = useState(false);
+	const [openAlma, setOpenAlma] = useState(false);
+	const [openES, setOpenES] = useState(false);
 
 	const handleClickOpenHulk = () => setOpenHulk(true);
 	const handleClickOpenAlma = () => setOpenAlma(true);
@@ -190,7 +171,6 @@ const Alquileres = () => {
 							alt={'alma'}
 							height="400"
 							image={alma2}
-							// image={card.image}
 						/>
 						<CardContent>
 							<Typography variant="h5" component="div" gutterBottom >
@@ -234,35 +214,33 @@ const Alquileres = () => {
 												</span>
 											</BotonWhatsapp>
 										</a>
-										</Grid>
-										<Grid item xs={1} sm={1} md={2} />
+									</Grid>
+									<Grid item xs={1} sm={1} md={2} />
 
-										<Grid item xs={12} sm={12} md={12} >
-											<div style={{paddingTop: '1em'}} />
-										</Grid>
-										<Grid item xs={1} sm={1} md={2} />
-										<Grid item xs={10} sm={10} md={8}>
-											<a
-												onClick={handleClickOpenAlma}
-												// href={`https://api.whatsapp.com/send?phone=34624158428&amp;text=${t('alquileres.alma.reserva')}`} target="_blank" rel="noopener"
-												style={{textDecoration: 'none', topMargin: '1em'}}>
-												<BotonFotos style={{backgroundColor:'white',topMargin: '1em'}}>
-													{/*<img src={faCameraRetro} alt={'icon'} style={{paddingLeft: '0.5em'}}/>*/}
-													<FontAwesomeIcon fontSize='large' icon={faCameraRetro} color={'orange'} alt={'icon'} style={{paddingLeft: '0.5em'}}/>
-													<span style={{color: 'orange', alignItems: 'strecht',paddingLeft: '1em'}}>
-																{t('alquileres.botonFotos')}
-													</span>
-												</BotonFotos>
-											</a>
-										</Grid>
-										<Grid item xs={1} sm={1} md={2} />
+									<Grid item xs={12} sm={12} md={12} >
+										<div style={{paddingTop: '1em'}} />
+									</Grid>
+									<Grid item xs={1} sm={1} md={2} />
+									<Grid item xs={10} sm={10} md={8}>
+										<a
+											onClick={handleClickOpenAlma}
+											style={{textDecoration: 'none', topMargin: '1em'}}>
+											<BotonFotos style={{backgroundColor:'white',topMargin: '1em'}}>
+												<FontAwesomeIcon fontSize='large' icon={faCameraRetro} color={'orange'} alt={'icon'} style={{paddingLeft: '0.5em'}}/>
+												<span style={{color: 'orange', alignItems: 'strecht',paddingLeft: '1em'}}>
+															{t('alquileres.botonFotos')}
+												</span>
+											</BotonFotos>
+										</a>
+									</Grid>
+									<Grid item xs={1} sm={1} md={2} />
 								</Grid>
 							</BarcoPrecio>
 						</CardContent>
 					</CardStyled>
 				</Grid>
-
 				<Grid item xs={1} sm={1} md={0.5} />
+
 				<Grid item xs={1} sm={1} md={0.5} />
 				<Grid item xs={10} sm={10} md={3.5}>
 					<CardStyled>
@@ -272,12 +250,10 @@ const Alquileres = () => {
 							</Typography>
 						</CardContent>
 						<CardMedia
-							// children={<Carouseleasy_sailing />}
 							component="img"
 							alt={'easy sailing'}
 							height="400"
 							image={quicksilver}
-							// image={card.image}
 						/>
 						<CardContent>
 							<Typography variant="h5" component="div" gutterBottom >
@@ -331,11 +307,9 @@ const Alquileres = () => {
 									<Grid item xs={10} sm={10} md={8}>
 										<a
 											onClick={handleClickOpenES}
-											// href={`https://api.whatsapp.com/send?phone=34624158428&amp;text=${t('alquileres.easy_sailing.reserva')}`} target="_blank" rel="noopener"
 											style={{textDecoration: 'none', topMargin: '1em'}}
 										>
 											<BotonFotos style={{backgroundColor:'white',topMargin: '1em'}}>
-												{/*<img src={faCameraRetro} alt={'icon'} style={{paddingLeft: '0.5em'}}/>*/}
 												<FontAwesomeIcon fontSize='large' icon={faCameraRetro} color={'orange'} alt={'icon'} style={{paddingLeft: '0.5em'}}/>
 												<span style={{color: 'orange', alignItems: 'strecht',paddingLeft: '1em'}}>
 																{t('alquileres.botonFotos')}
@@ -367,7 +341,6 @@ const Alquileres = () => {
 							alt={'hulk'}
 							height="400"
 							image={hulk2}
-							// image={card.image}
 						/>
 						<CardContent>
 							<Typography variant="h5" component="div" gutterBottom >
@@ -387,8 +360,6 @@ const Alquileres = () => {
 							</BarcoFeatures>
 							<BarcoFeatures>
 								<IconoNaranja icon={faGasPump} />
-								{/*<SpanBarcoFeatures>{t('alquileres.hulk.titulacion')}</SpanBarcoFeatures>*/}
-								{/*<SpanBarcoFeatures>{`10€ (2 Horas)`}&nbsp;&nbsp;&nbsp;&nbsp;{'20€ (4 Horas)'}&nbsp;&nbsp;&nbsp;&nbsp;{'30€ (9 Horas)'}</SpanBarcoFeatures>*/}
 								<SpanBarcoFeatures>{t('alquileres.hulk.gasolina2')}&nbsp;&nbsp;&nbsp;&nbsp;{t('alquileres.hulk.gasolina4')}&nbsp;&nbsp;&nbsp;&nbsp;{t('alquileres.hulk.gasolina9')}</SpanBarcoFeatures>
 							</BarcoFeatures>
 							<BarcoFeatures>
@@ -398,11 +369,9 @@ const Alquileres = () => {
 							<BarcoPrecio>
 								<Grid container>
 									<Grid item xs={4} sm={4} md={4}>
-
 										<span style={{color: 'orange', fontSize: '1.5em'}}>{t('alquileres.hulk.titulo2')}</span>
 										<div style={{topMargin: '1em'}} />
 										<span style={{color: '#00B4D8', fontSize: '2.25em'}}>{t('alquileres.hulk.precio2')}</span>
-
 									</Grid>
 									<Grid item xs={4} sm={4} md={4}>
 										<span style={{color: 'orange', fontSize: '1.5em'}}>{t('alquileres.hulk.titulo4')}</span>
@@ -435,16 +404,13 @@ const Alquileres = () => {
 									<Grid item xs={10} sm={10} md={8}>
 										<a
 											onClick={handleClickOpenHulk}
-											// href={`https://api.whatsapp.com/send?phone=34624158428&amp;text=${t('alquileres.hulk.reserva')}`} target="_blank" rel="noopener"
 											style={{textDecoration: 'none', topMargin: '1em'}}
 										>
 											<BotonFotos style={{backgroundColor:'white',topMargin: '1em'}}>
-												{/*<img src={faCameraRetro} alt={'icon'} style={{paddingLeft: '0.5em'}}/>*/}
 												<FontAwesomeIcon fontSize='large' icon={faCameraRetro} color={'orange'} alt={'icon'} style={{paddingLeft: '0.5em'}}/>
 												<span style={{color: 'orange', alignItems: 'strecht',paddingLeft: '1em'}}>
-																{t('alquileres.botonFotos')}
-													{/*{'VER MAS FOTOS'}*/}
-													</span>
+													{t('alquileres.botonFotos')}
+												</span>
 											</BotonFotos>
 										</a>
 									</Grid>
@@ -456,34 +422,17 @@ const Alquileres = () => {
 							</BarcoFeatures>
 						</CardContent>
 					</CardStyled>
-
 				</Grid>
 				<Grid item xs={1} sm={1} md={4} />
 
-
-
-
 				<Grid item xs={12} sm={12} md={12} >
-				<DivSeparator />
-			</Grid>
-			{/*<Grid item xs={12} sm={12} md={12} lg={12} >*/}
-			{/*	<DivBoton>*/}
-			{/*		/!*<a*!/*/}
-			{/*		/!*	href={`https://api.whatsapp.com/send?phone=34624158428&amp;text=${t('cursos.LicenciaNavegacion.Reserva')}`}*!/*/}
-			{/*		/!*	target="_blank"*!/*/}
-			{/*		/!*	rel="noopener noreferrer"*!/*/}
-			{/*		/!*	>*!/*/}
-			{/*		<Button size='large' variant='outlined' sx={{ bgcolor: '#CF9500', color: 'white' }} onClick={null}>*/}
-			{/*			{ t('cursos.LicenciaNavegacion.ReservaBoton') }*/}
-			{/*		</Button>*/}
-			{/*		/!*</a>*!/*/}
-			{/*	</DivBoton>*/}
-			{/*</Grid>*/}
-			<Grid item xs={12} sm={12} md={12} >
-				<DivSeparator />
-			</Grid>
+					<DivSeparator />
+				</Grid>
+				<Grid item xs={12} sm={12} md={12} >
+					<DivSeparator />
+				</Grid>
 
-				{/* TABARCA */}
+				{/* VIDEO TABARCA */}
 				<Grid item xs={12} sm={12} md={12} lg={12}>
 					<div align={'center'}>
 						<TypographyTitulos
@@ -508,12 +457,10 @@ const Alquileres = () => {
 				</Grid>
 				<Grid item xs={1} sm={1} md={2} lg={2} />
 
-			<Grid item xs={12} sm={12} md={12} >
-				<hr/>
-				<DivSeparator />
-			</Grid>
-
-
+				<Grid item xs={12} sm={12} md={12} >
+					<hr/>
+					<DivSeparator />
+				</Grid>
 			</Grid>
 
 			<Dialog
@@ -535,7 +482,6 @@ const Alquileres = () => {
 				</DialogActions>
 			</Dialog>
 
-
 			<Dialog
 				open={openAlma}
 				onClose={handleCloseAlma}
@@ -555,7 +501,6 @@ const Alquileres = () => {
 				</DialogActions>
 			</Dialog>
 
-
 			<Dialog
 				open={openES}
 				onClose={handleCloseES}
@@ -574,9 +519,6 @@ const Alquileres = () => {
 					<Button onClick={handleCloseES}>Close</Button>
 				</DialogActions>
 			</Dialog>
-
-
-
 
 		</>
 	);
