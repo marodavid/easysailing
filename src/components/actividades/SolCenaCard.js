@@ -2,9 +2,9 @@ import React from 'react'
 import {CardContent, CardMedia, Grid} from "@mui/material";
 import {useTranslation} from "react-i18next";
 
-import {faClock, faGasPump, faPeopleGroup, faShip, faUtensils} from "@fortawesome/free-solid-svg-icons";
+import {faClock, faGasPump, faPeopleGroup, faUtensils} from "@fortawesome/free-solid-svg-icons";
 import atardecerCena from "../../images/actividades/atardecerCena.JPG";
-import whatsapplogo from "../alquileres/whatsapp-icon.svg";
+import whatsapplogo from "../../images/actividades/whatsapp-icon.svg";
 
 import {
 	BarcoFeatures,
@@ -22,13 +22,13 @@ import {
 
 const SolCenaCard = () => {
 
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<CardStyled>
 			<CardContent>
 				<Grid container spacing={3}>
-					<Grid item xs={6} sm={6} md={6}>
+					<Grid item xs={12} sm={12} md={6}>
 						<CardMedia
 							component="img"
 							alt={'atardecerCena'}
@@ -36,7 +36,7 @@ const SolCenaCard = () => {
 							image={atardecerCena}
 						/>
 					</Grid>
-					<Grid item xs={6} sm={6} md={6} >
+					<Grid item xs={12} sm={12} md={6} >
 						<Grid container spacing={1}>
 							<Grid item xs={12} sm={12} md={12} >
 								<TypographyTituloTexto variant="h2" style={{color: '#7c73e6'}} >

@@ -3,7 +3,9 @@ import {CardContent, CardMedia, Grid} from "@mui/material";
 import {useTranslation} from "react-i18next";
 
 import sportMindful from "../../images/actividades/sportMindful.png";
-import whatsapplogo from "../alquileres/whatsapp-icon.svg";
+// import sportMindful from "../../images/actividades/sportYogaMindful.jpg";
+// import sportMindful from "../../images/actividades/sportYogaMindful2.png";
+import whatsapplogo from "../../images/actividades/whatsapp-icon.svg";
 
 import {
 	BotonWhatsapp,
@@ -17,7 +19,7 @@ import {
 
 const SportMindfulCard = () => {
 
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<CardStyled>
@@ -34,6 +36,7 @@ const SportMindfulCard = () => {
 							alt={'Image by teksomolika on Freepik'}
 							height="200"
 							image={sportMindful}
+
 						/>
 					</Grid>
 					<Grid item xs={12} sm={12} md={12}>

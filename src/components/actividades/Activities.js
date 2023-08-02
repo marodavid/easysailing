@@ -17,6 +17,7 @@ import PartyPhotosCard from "./PartyPhotosCard";
 import PartyRegaloCard from "./PartyRegaloCard";
 import EmpresasCard from "./EmpresasCard";
 import CustomMadeCard from "./CustomMadeCard";
+import logoTurismo from "../../images/logosOficiales/logoEmpresaTuristica.jpg";
 
 
 const DivTituloCursos = styled('div')(({ theme }) => ({
@@ -53,6 +54,20 @@ const TypographyTituloIntroduccion= styled('div')(({ theme }) => ({
 	fontFamily: 'Reem Kufi Fun',
 	fontWeight: '500',
 	textAlign: 'center',
+	fontSize: '20px',
+}));
+
+const LogoIMG = styled('img')(({ theme }) => ({
+	width: '8em',
+	height: '8em',
+	justifyContent:"center",
+	alignItems:"center",
+	// marginLeft: theme.spacing(1),
+	// marginRight: theme.spacing(1),
+	[theme.breakpoints.down('md')]:{
+		width: '3em',
+		height: '3em',
+	}
 }));
 
 const DivActividades = styled('div')(({ theme }) => ({
@@ -66,7 +81,7 @@ const fondo = '#FFF1F1';
 
 const Activities = () => {
 
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<DivActividades>
@@ -85,30 +100,33 @@ const Activities = () => {
 				</DivTituloCursos>
 			</Grid>
 
-			<Grid item xs={2} sm={2} md={3} />
-			<Grid item xs={8} sm={8} md={6} >
-				<TypographyTituloIntroduccion variant="body1" >
-					{ t('actividades.introduccion')}
-				</TypographyTituloIntroduccion>
-				<TypographyTituloIntroduccion variant="body1" >
-					{ t('actividades.introduccion2')}
-				</TypographyTituloIntroduccion>
-
+			<Grid item xs={1} sm={1} md={1.75} />
+			<Grid item xs={10} sm={10} md={1.75} >
+				<div align="center"><LogoIMG src={logoTurismo} alt={'Turismo'}/> </div>
 			</Grid>
-			<Grid item xs={2} sm={2} md={3} />
+			<Grid item xs={1} sm={1} md={0.25} />
+			<Grid item xs={1} sm={1} md={0.25} />
+			<Grid item xs={10} sm={10} md={4} >
+				<TypographyTituloIntroduccion variant="body1" >
+					{ t('actividades.introduccion3')}
+				</TypographyTituloIntroduccion>
+				<DivParagraphSeparator />
+				<TypographyTituloIntroduccion variant="body1" >
+					{ t('actividades.introduccion')}{' '}{ t('actividades.introduccion2')}
+				</TypographyTituloIntroduccion>
+			</Grid>
+			<Grid item xs={1} sm={1} md={4} />
+
 			<Grid item xs={12} sm={12} md={12} >
 				<DivSeparator />
 			</Grid>
 
-
+			{/* Charters */}
 			<Grid item xs={1} sm={1} md={2} lg={1.5} />
 			<Grid item xs={10} sm={10} md={8} lg={9} >
-				{/*<div className={classes.tituloCursos} style={{alignItems: "left"}}>*/}
 				<Typography variant="h5" style={{fontFamily: 'Reem Kufi Fun', fontWeight: '700'}} align={'left'}  >
-					{/*{' Cursos y Licencias'}*/}
 					{ t('actividades.charterTitulo')}
 				</Typography>
-				{/*</div>*/}
 			</Grid>
 			<Grid item xs={1} sm={1} md={2} lg={1.5} />
 
@@ -117,11 +135,11 @@ const Activities = () => {
 			</Grid>
 
 			<Grid item xs={12} sm={12} md={12} xl={1.25} />
-			<Grid item xs={12} sm={12} md={12} xl={4.5} >
+			<Grid item xs={12} sm={12} md={12} xl={4.5}>
 				<TabarcaCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={12} xl={0.5} />
-			<Grid item xs={12} sm={12} md={12} xl={4.5}>
+			<Grid item xs={12} sm={12} md={12} xl={4.5} sx={{marginTop: {xl: '0', lg: '0', md: '0', sm: '2em', xs: '2em'}}} >
 				<BenidormCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={1.25} xl={1.25} />
@@ -148,7 +166,7 @@ const Activities = () => {
 				<SolCenaCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={12} xl={0.5} />
-			<Grid item xs={12} sm={12} md={12} xl={4.5}>
+			<Grid item xs={12} sm={12} md={12} xl={4.5} sx={{marginTop: {xl: '0', lg: '0', md: '0', sm: '2em', xs: '2em'}}} >
 				<SolDesayunoCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={1.25} xl={1.25} />
@@ -176,7 +194,7 @@ const Activities = () => {
 				<SportCalasCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={12} xl={0.5} />
-			<Grid item xs={12} sm={12} md={12} xl={4.5}>
+			<Grid item xs={12} sm={12} md={12} xl={4.5} sx={{marginTop: {xl: '0', lg: '0', md: '0', sm: '2em', xs: '2em'}}} >
 				<SportDivingCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={1.25} xl={1.25} />
@@ -190,7 +208,7 @@ const Activities = () => {
 				<SportMindfulCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={12} xl={0.5} />
-			<Grid item xs={12} sm={12} md={12} xl={4.5}>
+			<Grid item xs={12} sm={12} md={12} xl={4.5} sx={{marginTop: {xl: '0', lg: '0', md: '0', sm: '2em', xs: '2em'}}} >
 				<SportVelaCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={1.25} xl={1.25} />
@@ -199,7 +217,6 @@ const Activities = () => {
 			<Grid item xs={12} sm={12} md={12} xl={12} >
 				<DivSeparator />
 			</Grid>
-
 
 			{/* Fiestas */}
 			<Grid item xs={1} sm={1} md={2} lg={1.5} />
@@ -219,7 +236,7 @@ const Activities = () => {
 				<PartyBachelorCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={12} xl={0.5} />
-			<Grid item xs={12} sm={12} md={12} xl={4.5}>
+			<Grid item xs={12} sm={12} md={12} xl={4.5} sx={{marginTop: {xl: '0', lg: '0', md: '0', sm: '2em', xs: '2em'}}} >
 				<PartyBirthdayCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={1.25} xl={1.25} />
@@ -233,7 +250,7 @@ const Activities = () => {
 				<PartyPhotosCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={12} xl={0.5} />
-			<Grid item xs={12} sm={12} md={12} xl={4.5}>
+			<Grid item xs={12} sm={12} md={12} xl={4.5} sx={{marginTop: {xl: '0', lg: '0', md: '0', sm: '2em', xs: '2em'}}} >
 				<PartyRegaloCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={1.25} xl={1.25} />
@@ -242,7 +259,6 @@ const Activities = () => {
 			<Grid item xs={12} sm={12} md={12} xl={12} >
 				<DivSeparator />
 			</Grid>
-
 
 			{/* Otras Actividades */}
 			<Grid item xs={1} sm={1} md={2} lg={1.5} />
@@ -262,11 +278,10 @@ const Activities = () => {
 				<EmpresasCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={12} xl={0.5} />
-			<Grid item xs={12} sm={12} md={12} xl={4.5}>
+			<Grid item xs={12} sm={12} md={12} xl={4.5} sx={{marginTop: {xl: '0', lg: '0', md: '0', sm: '2em', xs: '2em'}}} >
 				<CustomMadeCard />
 			</Grid>
 			<Grid item xs={12} sm={12} md={1.25} xl={1.25} />
-
 			{/* Fin Otras Actividades */}
 
 			<Grid item xs={12} sm={12} md={12} xl={12} >

@@ -3,7 +3,7 @@ import {CardContent, CardMedia, Grid} from "@mui/material";
 import {useTranslation} from "react-i18next";
 
 import partyBachelor from "../../images/actividades/partyBachelor.jpg";
-import whatsapplogo from "../alquileres/whatsapp-icon.svg";
+import whatsapplogo from "../../images/actividades/whatsapp-icon.svg";
 
 import {
 	BotonWhatsapp,
@@ -17,7 +17,7 @@ import {
 
 const PartyBachelorCard = () => {
 
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<CardStyled>

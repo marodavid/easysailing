@@ -2,8 +2,8 @@ import React from 'react'
 import {CardContent, CardMedia, Grid} from "@mui/material";
 import {useTranslation} from "react-i18next";
 
-import partyBonoRegalo from "../../images/actividades/partyBonoRegalo.jpg";
-import whatsapplogo from "../alquileres/whatsapp-icon.svg";
+import partyBonoRegalo from "../../images/actividades/partyBonoRegalo.png";
+import whatsapplogo from "../../images/actividades/whatsapp-icon.svg";
 
 import {
 	BotonWhatsapp,
@@ -17,7 +17,7 @@ import {
 
 const PartyRegaloCard = () => {
 
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<CardStyled>

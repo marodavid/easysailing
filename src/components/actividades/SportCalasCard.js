@@ -2,9 +2,9 @@ import React from 'react'
 import {CardContent, CardMedia, Grid} from "@mui/material";
 import {useTranslation} from "react-i18next";
 
-import {faClock, faGasPump, faPeopleGroup, faShip, faUtensils} from "@fortawesome/free-solid-svg-icons";
+import {faClock, faGasPump, faPeopleGroup, faUtensils} from "@fortawesome/free-solid-svg-icons";
 import sportCalas from "../../images/actividades/sportCalas.jpg";
-import whatsapplogo from "../alquileres/whatsapp-icon.svg";
+import whatsapplogo from "../../images/actividades/whatsapp-icon.svg";
 
 import {
 	BarcoFeatures,
@@ -22,13 +22,13 @@ import {
 
 const SportCalasCard = () => {
 
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<CardStyled>
 			<CardContent>
 				<Grid container spacing={3}>
-					<Grid item xs={6} sm={6} md={6}>
+					<Grid item xs={12} sm={12} md={6}>
 						<CardMedia
 							component="img"
 							alt={'sportCalas'}
@@ -36,7 +36,7 @@ const SportCalasCard = () => {
 							image={sportCalas}
 						/>
 					</Grid>
-					<Grid item xs={6} sm={6} md={6} >
+					<Grid item xs={12} sm={12} md={6} >
 							<Grid item xs={12} sm={12} md={12} >
 								<TypographyTituloTexto variant="h2" style={{color: '#7c73e6'}} >
 									{ t('actividades.sportCalasSUP.protitulo')}
@@ -63,7 +63,7 @@ const SportCalasCard = () => {
 								</BarcoFeatures>
 							</Grid>
 					</Grid>
-					<Grid item xs={12} sm={12} md={12}>
+					<Grid item xs={12} sm={12} md={12} >
 						<TypographyParrafoTexto variant="h5">
 							{ t('actividades.sportCalasSUP.subtitulo')}
 						</TypographyParrafoTexto>
@@ -73,13 +73,13 @@ const SportCalasCard = () => {
 						</TypographyParrafoTexto>
 						<DivParagraphSeparator />
 						<Grid container>
-							<Grid item xs={6} sm={6} md={6}>
+							<Grid item xs={6} sm={6} md={6} >
 								<BarcoPrecio>
 									{t('actividades.sportCalasSUP.precio')}<br/>
 									<span style={{color: violeta, fontSize: '0.65em'}}>{t('actividades.sportCalasSUP.precioTexto')}</span>
 								</BarcoPrecio>
 							</Grid>
-							<Grid item xs={6} sm={6} md={6}>
+							<Grid item xs={6} sm={6} md={6} >
 								<BarcoPrecio>
 									{t('actividades.sportCalasSUP.precio2')}<br/>
 									<span style={{color: violeta, fontSize: '0.65em'}}>{t('actividades.sportCalasSUP.precio2Texto')}</span>

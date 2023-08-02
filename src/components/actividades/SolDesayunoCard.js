@@ -1,10 +1,13 @@
 import React from 'react'
-import {CardContent, CardMedia, Grid} from "@mui/material";
 import {useTranslation} from "react-i18next";
-
-import {faClock, faGasPump, faPeopleGroup, faShip, faUtensils} from "@fortawesome/free-solid-svg-icons";
+import {
+	CardContent,
+	CardMedia,
+	Grid
+} from "@mui/material";
+import {faClock, faGasPump, faPeopleGroup, faUtensils} from "@fortawesome/free-solid-svg-icons";
 import amanecerDesayuno from "../../images/actividades/amanecerDesayuno.png";
-import whatsapplogo from "../alquileres/whatsapp-icon.svg";
+import whatsapplogo from "../../images/actividades/whatsapp-icon.svg";
 
 import {
 	BarcoFeatures,
@@ -22,13 +25,13 @@ import {
 
 const SolDesayunoCard = () => {
 
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<CardStyled>
 			<CardContent>
 				<Grid container spacing={3}>
-					<Grid item xs={6} sm={6} md={6}>
+					<Grid item xs={12} sm={12} md={6}>
 						<CardMedia
 							component="img"
 							alt={'amanecerDesayuno'}
@@ -36,7 +39,7 @@ const SolDesayunoCard = () => {
 							image={amanecerDesayuno}
 						/>
 					</Grid>
-					<Grid item xs={6} sm={6} md={6} >
+					<Grid item xs={12} sm={12} md={6} >
 						<Grid container spacing={1}>
 							<Grid item xs={12} sm={12} md={12} >
 								<TypographyTituloTexto variant="h2" style={{color: '#7c73e6'}} >
@@ -64,8 +67,6 @@ const SolDesayunoCard = () => {
 								</BarcoFeatures>
 							</Grid>
 						</Grid>
-
-
 					</Grid>
 					<Grid item xs={12} sm={12} md={12}>
 						<TypographyParrafoTexto variant="h5">
@@ -112,7 +113,6 @@ const SolDesayunoCard = () => {
 				</Grid>
 			</CardContent>
 		</CardStyled>
-
 	)
 }
 

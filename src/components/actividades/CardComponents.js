@@ -36,6 +36,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 		marginBottom: '15px',
 	}));
 
+export const DivLineSeparator = styled('div')(({ theme }) => ({
+	marginBottom: '10px',
+}));
+
 
 
 	export const TypographyTituloTexto= styled('div')(({ theme }) => ({
@@ -62,12 +66,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 		fontWeight: '400',
 		fontSize: '16px',
 		fontcolor: 'black',
-	}));
-
-	export const TypographyTituloIntroduccion= styled('div')(({ theme }) => ({
-		fontFamily: 'Reem Kufi Fun',
-		fontWeight: '500',
-		textAlign: 'center',
 	}));
 
 	export const IconoVioleta = styled(FontAwesomeIcon)(({ theme }) => ({
