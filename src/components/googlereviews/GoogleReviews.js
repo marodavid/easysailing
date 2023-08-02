@@ -63,7 +63,7 @@ const GoogleReviews = () => {
 
 
 	return (
-		<div className={classes.fondo}>
+		<div className={classes.fondo} id={'opiniones'}>
 
 		<Grid container>
 			<Grid item xs={12} sm={12} md={12} >
