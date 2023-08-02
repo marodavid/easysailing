@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
-import './WhatsappButton.css'
+import { useTranslation } from 'react-i18next';
 import { FaWhatsapp } from 'react-icons/fa';
 
+import './WhatsappButton.css'
 
 
 const WhatsappButton = () => {
 
 	const [isScrolling, setIsScrolling] = useState(false);
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -31,7 +31,7 @@ const WhatsappButton = () => {
 			style={{ right: '30px', bottom: '20px' }}
 		>
 			<a
-				href={"https://api.whatsapp.com/send?phone=34624158428&amp;text=Hola, quiero más información sobre los cursos y experiencias de vuestra escuela."}
+				href={`https://api.whatsapp.com/send?phone=34624158428&amp;text=${t('whatsappButton')}`}
 				rel="noopener noreferrer"
 				target="_blank"
 			>
