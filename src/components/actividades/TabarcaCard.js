@@ -84,6 +84,10 @@ const TabarcaCard = () => {
 						</TypographyParrafoTexto>
 						<DivParagraphSeparator />
 						<TypographyParrafoTexto>
+							{ t('actividades.charterTabarca.aclaracion3')}
+						</TypographyParrafoTexto>
+						<DivParagraphSeparator />
+						<TypographyParrafoTexto>
 							{ t('actividades.charterTabarca.aclaracion2')}
 						</TypographyParrafoTexto>
 						<DivParagraphSeparator />
