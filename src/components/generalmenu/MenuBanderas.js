@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
-import { useTranslation, Trans } from 'react-i18next';
+// import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import {
 	ClickAwayListener,
@@ -11,12 +11,16 @@ import {
 	MenuList,
 	Paper,
 	Popper,
-	// Tooltip, Typography
 } from "@mui/material";
-import ListIcon from '@mui/icons-material/List'
 import { styled } from '@mui/system'
 import { GB, ES, FR } from "country-flag-icons/react/3x2";
 import "country-flag-icons/3x2/flags.css";
+
+// import {faArrowRightFromBracket} from "@fortawesome/free-solid-svg-icons";
+// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+// import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+// import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
+// import InputIcon from '@mui/icons-material/Input';
 
 
 const LinkRight = styled(Link)(({ theme }) => ({
@@ -82,22 +86,30 @@ const FlagIconsES = styled(ES)(( { theme }) => ({
 		fontSize: '1.5rem',
 	}
 
-}))
-//
-// const lngs = {
-// 	en: { nativeName: 'English' },
-// 	de: { nativeName: 'Deutsch' },
-// 	es: { nativeName: 'Español' },
-// 	fr: { nativeName: 'Français'},
-// };
+}));
+
+// const DownArrow = styled('i')(( { theme }) => ({
+// 	border: 'solid darkBlue',
+// 	borderWidth: '0 3px 3px 0',
+// 	display: 'inline-block',
+// 	padding: '3px',
+// 	transform: 'rotate(45deg)',
+// 	align: 'center',
+// 	marginLeft: '-22px',
+// 	marginTop: '22px',
+// 	// paddingTop: '25px',
+// 	borderStyle: 'solid',
+// 	color: '#eaf6f6',
+// 	// -webkit-transform: 'rotate(-45deg)',
+// }));
 
 
 function MenuBanderas() {
-	const navigate = useNavigate()
-	const { t, i18n } = useTranslation();
+	// const navigate = useNavigate()
+	const { i18n } = useTranslation();
 
-	const [open, setOpen] = React.useState(false);
-	const anchorRef = React.useRef(null);
+	const [open, setOpen] = useState(false);
+	const anchorRef = useRef(null);
 
 	const handleToggle = () => {
 		setOpen((prevOpen) => !prevOpen);
@@ -118,8 +130,8 @@ function MenuBanderas() {
 	}
 
 	// return focus to the button when we transitioned from !open -> open
-	const prevOpen = React.useRef(open);
-	React.useEffect(() => {
+	const prevOpen = useRef(open);
+	useEffect(() => {
 		if (prevOpen.current === true && open === false) {
 			anchorRef.current.focus();
 		}
@@ -129,7 +141,18 @@ function MenuBanderas() {
 	const displayFlag = (language) => {
 		switch (i18n.language.substring(0,2)) {
 			case 'es':
-				return (<FlagIconsES title="Español" />);
+				return (<>
+					<FlagIconsES title="Español" />
+					{/*<div align="center">*/}
+					{/*<FontAwesomeIcon size="small" icon={faArrowRightFromBracket} style={{paddingLeft: '3px', paddingBottom: '9px', color: '#02006c', display: {lg:'block', md:'none', sm:'none', xs:'none'}}} />*/}
+					{/*<KeyboardArrowDownIcon size="small" style={{paddingLeft: '3px', paddingBottom: '9px', color: '#02006c', display: {lg:'block', md:'none', sm:'none', xs:'none'}}} />*/}
+
+					{/*<InputIcon size="small" style={{paddingLeft: '3px', paddingBottom: '2px', color: '#02006c', display: {lg:'block', md:'none', sm:'none', xs:'none'}}} />*/}
+
+					{/*<DownArrow />*/}
+					{/*</div>*/}
+					</>
+					);
 				break;
 			case 'en':
 				return (<FlagIconsGB title="English" />);
@@ -154,9 +177,6 @@ function MenuBanderas() {
 				onClick={handleToggle}
 				>
 				{ displayFlag(i18n.language) }
-				{ console.log('DEBUG') }
-				{ console.log(i18n.language)}
-				{/*<FlagIconsES title="Español" />*/}
 			</LinkRight>
 			<Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
 				{({ TransitionProps, placement }) => (
@@ -176,9 +196,6 @@ function MenuBanderas() {
 									<MenuItem onClick={() => i18n.changeLanguage('fr')}>
 										<FlagIconsFR title="Français" />
 									</MenuItem>
-									{/*<MenuItem onClick={() => i18n.changeLanguage('de')}>*/}
-									{/*	<FlagIconsDE title="Deutsch" />*/}
-									{/*</MenuItem>*/}
 								</MenuList>
 							</ClickAwayListener>
 						</PaperOptions>
@@ -186,7 +203,6 @@ function MenuBanderas() {
 				)}
 			</Popper>
 		</div>
-
 	);
 }
 

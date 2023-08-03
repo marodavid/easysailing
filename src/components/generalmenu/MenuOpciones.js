@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { useTranslation } from 'react-i18next';
 import {
 	ClickAwayListener,
 	Grow,
@@ -9,11 +10,15 @@ import {
 	MenuList,
 	Paper,
 	Popper,
-	// Tooltip, Typography
 } from "@mui/material";
 import ListIcon from '@mui/icons-material/List'
 import { styled } from '@mui/system'
 
+
+const HashLinkMenu = styled(HashLink)(({ theme }) => ({
+	textDecoration: 'none',
+	color: '#02006c',
+}));
 
 const LinkRight = styled(Link)(({ theme }) => ({
 	color: theme.palette.white,
@@ -25,11 +30,12 @@ const PaperOptions = styled(Paper)(({ theme }) => ({
 	backgroundColor: 'white',
 }));
 
-function MenuOpciones() {
-	const navigate = useNavigate()
 
-	const [open, setOpen] = React.useState(false);
-	const anchorRef = React.useRef(null);
+function MenuOpciones() {
+	const { t } = useTranslation();
+
+	const [open, setOpen] = useState(false);
+	const anchorRef = useRef(null);
 
 	const handleToggle = () => {
 		setOpen((prevOpen) => !prevOpen);
@@ -50,8 +56,8 @@ function MenuOpciones() {
 	}
 
 	// return focus to the button when we transitioned from !open -> open
-	const prevOpen = React.useRef(open);
-	React.useEffect(() => {
+	const prevOpen = useRef(open);
+	useEffect(() => {
 		if (prevOpen.current === true && open === false) {
 			anchorRef.current.focus();
 		}
@@ -60,7 +66,6 @@ function MenuOpciones() {
 
 	return (
 		<div>
-			{/*<Tooltip title={'Menu'}>*/}
 			<LinkRight
 				variant="h6"
 				underline="none"
@@ -71,7 +76,6 @@ function MenuOpciones() {
 			>
 				<ListIcon fontSize={'large'}/>
 			</LinkRight>
-			{/*</Tooltip>*/}
 			<Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
 				{({ TransitionProps, placement }) => (
 					<Grow
@@ -81,11 +85,13 @@ function MenuOpciones() {
 						<PaperOptions>
 							<ClickAwayListener onClickAway={handleClose}>
 								<MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-									<MenuItem onClick={() => navigate('/')}>Inicio</MenuItem>
-									{/*<MenuItem onClick={() => navigate('/cursos')}>Cursos</MenuItem>*/}
-									<MenuItem onClick={() => alert('Esta sección estará lista en pocos días')}>Cursos</MenuItem>
-									<MenuItem onClick={() => alert('Esta sección estará lista en pocos días')}>Contacto</MenuItem>
-									{/*<MenuItem onClick={() => navigate('/contacto')}>Contacto</MenuItem>*/}
+									<MenuItem><HashLinkMenu to='/'>{t('menuOpciones.inicio')}</HashLinkMenu></MenuItem>
+									<MenuItem><HashLinkMenu to='/#whoweare'>{t('menuOpciones.whoweare')}</HashLinkMenu></MenuItem>
+									<MenuItem><HashLinkMenu to='/#cursos'>{t('menuOpciones.cursos')}</HashLinkMenu></MenuItem>
+									<MenuItem><HashLinkMenu to='/#alquileres'>{t('menuOpciones.alquileres')}</HashLinkMenu></MenuItem>
+									<MenuItem><HashLinkMenu to='/#actividades'>{t('menuOpciones.actividades')}</HashLinkMenu></MenuItem>
+									<MenuItem><HashLinkMenu to='/#opiniones'>{t('menuOpciones.colaboraciones')}</HashLinkMenu></MenuItem>
+									<MenuItem><HashLinkMenu to='/#contacto'>{t('menuOpciones.contacto')}</HashLinkMenu></MenuItem>
 								</MenuList>
 							</ClickAwayListener>
 						</PaperOptions>
@@ -93,7 +99,6 @@ function MenuOpciones() {
 				)}
 			</Popper>
 		</div>
-
 	);
 }
 
