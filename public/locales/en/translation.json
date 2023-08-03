@@ -1,11 +1,8 @@
 {
   "cookies": {
-    "text": "This website uses cookies to enhance the user experience. ",
-    "buttonAccept": "OK"
-  },
-  "startPage": {
-    "part1": "Edit <1>src/App.js</1> and save to reload.",
-    "part2": "Learn React"
+    "text": "This website uses its own or third-party cookies to facilitate your navigation. To continue browsing, accept its use, otherwise the web page may not work correctly",
+    "buttonAccept": "Accept Cookies",
+    "buttonDecline": "Decline Cookies"
   },
   "idioma": "en",
   "menuOpciones": {
@@ -14,122 +11,317 @@
     "actividades": "Activities",
     "alquileres": "Rentals",
     "whoweare": "About Us",
-    "colaboraciones": "Partnerships",
+    "colaboraciones": "Reviews",
     "contacto": "Contact"
   },
+  "whatsappButton": "Hello, I want more information about your school.",
+  "whoweare": {
+    "portada": "About Us",
+    "parrafo1": "Easy Sailing emerges from our passion for the sea and the desire to share this passion through teaching, reaching the widest possible audience.",
+    "parrafo2": "We are a dedicated, multilingual team committed to providing quality training and exciting nautical activities for all types of audiences.",
+    "parrafo3": "Our logo represents the simplicity with which a child understands sailing, taking that simplicity as the identity and philosophy of learning, hence the name “Easy Sailing“.",
+    "parrafo4": "Our emblem, “Fulfilling Dreams“, comes from our belief that the sea enriches life, and we want to be a part of all those individuals for whom learning and engaging in nautical activities are dreams come true.",
+    "_parrafo5": "We use English terminology because our school has an international scope, as our team is composed of multilingual individuals.",
+    "_misionTitulo": "Mission",
+    "_misionTexto": "To have the broadest reach possible through education and nautical activities.",
+    "_visionTitulo": "Vision",
+    "_visionTexto": "To be the reference school in Campello (Alicante).",
+    "_valoresTitulo": "Values",
+    "_valoresTexto": "To maintain high quality standards and promote activity among women, children, and less privileged sectors.",
+    "_equipo": "Our Team",
+    "paz": {
+      "nombre": "Paz Díaz.",
+      "parrafo1": "An entrepreneur of Spanish nationality, holding a degree in Business Administration and Management, Padi Advanced diving and Professional Skipper of Recreational Vessels.",
+      "parrafo2": "The first female founder and instructor of a nautical school in the province of Alicante.",
+      "parrafo3": "She has studied and worked in multiple European countries and has been a sailor for years, being part of the crew of the Altea's vessel, Limbo.",
+      "idiomas": "Languages: Spanish, English, French, and German."
+    },
+    "jean": {
+      "nombre": "Jean David López",
+      "parrafo1": "An entrepreneur and Port Captain, with dual French and Spanish nationality, who has been involved in Charter activities since 2018.",
+      "parrafo2": "Having lived in various countries and run his own company in Paris, he brings an international perspective to the school and he provides a better service to our French-speaking residents in Campello and surrounding areas",
+      "parrafo3": "Both of us share a passion for the sea, we are neighbors in Campello, and we believe in the development of the port for greater international visibility and nautical activities.",
+      "idiomas": "Languages: Spanish, French, and English."
+    }
+  },
   "cursos": {
-    "portada": "Cursos y Licencias",
-    "introduccion": "an Canáataca ancantrarás la mayar afarta da carsas y práctacas para canvartarta an patrón. Las majaras anstractaras, anstalacaanas y barcas ascaala, para qaa adqaaaras la axparaancaa nacasaraa, nas han canvartada an la pramara ascaala dal país an númara da alamnas. Más da 40.000 antagaas alamnas nas avalan. ¿Qaaaras sar patrón? alaga ta tatalacaón:",
+    "portada": "Courses and Licences",
+    "introduccion": "Easy Sailing offers official training as well as other private courses.",
+    "introduccion2":"We are adapting our offer to your demand.",
+    "introduccion3": "We are an Official School approved by the government of the Valencian Community.",
+    "introduccion4": "We will introduce the PER course and the cruising sail practice as soon as possible.",
     "LicenciaNavegacion": {
-      "Reserva": "***Hola, quiero reservar plaza para la Licencia de Navegación.",
-      "ReservaBoton": "Reservar ahora",
-      "Titulo":"***Licencia de Navegacion",
-      "Subtitulo": "Primera titulación recreativa y única que no tiene examen y no caduca y se puede obtener a partir de los 16 años con autorización de los padres.",
-      "Parrafo1": "La Licencia de navegación es la primera titulación recreativa y única que no tiene examen y no caduca y se puede\nobtener a partir de los 16 años con autorización de los padres.",
-      "Parrafo2": "Habilita para el gobierno de embarcaciones de recreo de hasta 6 metros de eslora para la navegación costera a\nuna distancia máxima de 2 millas de un puerto o lugar de abrigo en navegación diurna.",
-      "Parrafo3": "Además podrás llevar motos náuticas sin límite de potencia.",
-      "Parrafo4": "Para la obtención de la Licencia se exige que se realice un reconocimiento médico.",
-      "Parrafo5": "Easy Sailing ha conseguido cerrar acuerdos para que sus alumnos puedan realizar dicho reconocimiento al precio\nmás económico del mercado (te facilitamos todos los datos tras confirmar la reserva).",
-      "Parrafo6": "Precio por persona 80 eur",
-      "Parrafo7": "Oferta pareja a 75 eur cada uno.",
+      "Reserva": "Hello, I want to book a place for the Navigation Licence.",
+      "ReservaBoton": "Book now",
+      "Titulo":"Navigation Licence",
+      "Subtitulo": "This licence does not have an exam and does not expire and can be obtained from the age of 16 with parental consent.",
+      "Parrafo1": "This licence does not have an exam and does not expire and can be obtained from the age of 16 with parental consent.",
+      "Parrafo2": "The Navigation License, known as 'Licencia de Navegación' in Spain, will allow you to drive boats up to 6 meters in length, up to 2 miles away from the coast, between sunrise and sunset (not allow during the night).",
+      "Parrafo3": "It also allows you to drive Jet Skis without power restriction.",
+      "Parrafo4": "A medical certificate is required for the Licence.",
+      "Parrafo5": "Easy Sailing has managed to close agreements for its students to get the cheapest price on the market for the medical certificate. (Ask us after booking)",
+      "Parrafo6": "Price per person 80 eur",
+      "Parrafo7": "Two people, 75 eur each.",
       "Bulletpoint": {
-        "Heading": "Atribuciones Licencia de Navegación",
-        "Punto1Titulo": "Hasta 6 metros de eslora",
-        "Punto1Texto": "La Licencia de Navegación permite gobernar embarcaciones de un máximo de 6 metros de eslora.",
-        "Punto2Titulo": "Hasta 2 millas de la costa",
-        "Punto2Texto": "La distancia máxima permitida para alejarse de la costa con la Licencia de Navegación son 2 millas.",
-        "Punto3Titulo": "Navegacion diurna",
-        "Punto3Texto": "Con la Licencia de Navegación solo está permitida la navegación diurna",
-        "Punto4Titulo": "Sin límite de potencia",
-        "Punto4Texto": "La Licencia de Navegación no establece límite de potencia en las embarcaciones, ni motos de agua.",
-        "Punto5Titulo": "Motos de agua",
-        "Punto5Texto": "La Licencia de Navegación habilita para gobernar todo tipo de motos náuticas."
+        "Heading": "Attributions Navigation Licence",
+        "Punto1Texto": "Navigation Licence allows you to drive boats up to 6 meters in length.",
+        "Punto2Texto": "You can drive boats up to 2 miles away from the coast.",
+        "Punto3Texto": "You will be allowed to drive boats between sunrise and sunset",
+        "Punto4Texto": "You will be allowed to drive boats without power limit.",
+        "Punto5Texto": "You will be allowed to drive any kind of Jet Skis."
       }
     },
     "PerVela": {
-      "Titulo": "P.E.R.",
-      "Subtitulo": "Titulo de Patron de Embarcaciones Recreativas",
-      "Parrafo1": "Estamos haciendo todo lo posible para traer la vela de crucero a Campello.",
-      "Parrafo2": "Si estás interesado en recibir clases de vela de crucero, mandanos un mensaje y te contactaremos tan pronto tengamos disponible esta modalidad."
+      "Reserva": "Hello, I want more information about PER and Sail.",
+      "ReservaBoton": "Send message",
+      "Titulo": "P.E.R. and Sail",
+      "Subtitulo": "Click for more info.",
+      "Parrafo1": "We are doing everything possible to bring cruising sailing to Campello (Alicante).",
+      "Parrafo2": "If you are interested in receiving cruise sailing classes, send us a message and we will contact you as soon as this modality is available."
     },
     "LnParticular": {
-      "Titulo": "LN Particular Intensiva",
-      "Subtitulo": "Somos la primera escuela de la provincia de Alicante en ofrecer la Licencia de Navegación Intensiva.",
-      "Parrafo1": "Easy Sailing es la escuela de referencia para nuestro público extranjero al ser capaz de dar servicio tanto en Castellano como Inglés, Francés y Alemán.",
-      "Parrafo2": "Atendiendo a la demanda y necesidades de nuestro público, somos la primera escuela de la provincia de Alicante en ofrecer la Licencia de Navegación Intensiva.",
-      "Parrafo3": "Se realiza en parejas con un total de 2 alumnos por grupo, pudiendo elegir el idioma en el que se imparte la clase entre castellano, inglés y francés y con una duración de 4 horas para practicar de forma intensiva y clase particular, todas las maniobras necesarias para gobernar de forma correcta una embarcación de 6 metros de eslora.",
-      "Parrafo4": "Precio por persona: 150 euros."
+      "Reserva": "Hello, I want to book for your Intensive private Navigation Licence.",
+      "ReservaBoton": "Book now",
+      "Titulo": "Intensive private Navigation Licence",
+      "Subtitulo": "We are the first school in the region of Alicante to offer an Intensive Navigation License program.",
+      "Parrafo1": "Easy Sailing is the main school for our foreign people, being able to provide information about our services in Spanish, English, French and German.",
+      "Parrafo2": "In response to the demand and needs of our people, we are the first school in the province of Alicante to offer an Intensive Navigation License program.",
+      "Parrafo3": "It is done in pairs with a total of 2 students per group, being able to choose the language among Spanish, English and French and with a duration of 4 hours to practice intensively all the necessary maneuvers to drive correctly a boat of 6 meter long.",
+      "Parrafo4": "Price: 150 euros per person."
     },
     "ClasesPerfec": {
-      "Titulo": "Clases Perfeccionamiento",
-      "Subtitulo": "Si ya cuentas con tu Licencia de Navegación, pero por falta de práctica no te sientes con la suficiente\nseguridad de gobernar una embarcación, tenemos varias opciones para ti.",
-      "Parrafo1": "Si ya cuentas con tu Licencia de Navegación, pero por falta de práctica no te sientes con la suficiente\nseguridad de gobernar una embarcación, tenemos varias opciones para ti.",
-      "ParticularesTitulo": "Particulares",
-      "ParticularesTexto": "clases particulares a 40 euros la hora.",
-      "GruposTitulo": "Grupos",
-      "GruposTexto": "grupos de 4 personas con 2 horas de duración por 40 euros por persona.",
-      "MixtoTitulo": "Mixto",
-      "MixtoTexto": "Realizamos contigo una revisión de 20 minutos, te facilitamos una guía de instrucciones prácticas y ponemos a tu disposición una neumática 2 horas, que podréis utilizar para un máximo de 5 personas y así poder repasar por vuestra cuenta las maniobras que queráis con la seguridad que una neumática ofrece.",
-      "MixtoPrecio": "Precio 99 euros."
+      "Reserva": "Hello, I want to book your Improvement Lessons.",
+      "ReservaBoton": "Book now",
+      "Titulo": "Improvement Lessons",
+      "Subtitulo": "If you already have your Navigation License, but you don’t feel confident enough to steer a boat, we have several options for you.",
+      "Parrafo1": "If you already have your Navigation License, but you don’t feel confident enough to steer a boat, we have several options for you.",
+      "ParticularesTitulo": "Individuals",
+      "ParticularesTexto": "Private lessons at 40 euros per hour.",
+      "GruposTitulo": "Groups",
+      "GruposTexto": "Groups of 4 people with a duration of 2 hours.",
+      "GruposPrecio": "Price 40 Euros por person.",
+      "MixtoTitulo": "Mixed",
+      "MixtoTexto": "We give you a 20 minute review of the most important things for sailing and you would steer an inflatable boat for five people during two hours.",
+      "MixtoPrecio": "Price 99 euros."
     },
     "IntroNavegacion": {
-      "Titulo": "Intro Navegación para Grupos",
-      "Subtitulo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      "Parrafo1": "Si quieres tener un bautizo náutico y descubrir si este es tu elemento, vive la experiencia de introducción a la navegación a través de esta actividad de 2 horas de duración por la calas de Campello guiada por un instructor profesional.",
-      "Parrafo2": ""
+      "Reserva": "Hello, I want to book a place for your Nautical Baptism for Groups.",
+      "ReservaBoton": "Book now",
+      "Titulo": "Nautical Baptism for Groups",
+      "Subtitulo": "If you want to have a nautical baptism and discover if this is your element, you have this activity of two hours long where we will sail around Campello (Alicante) guided by a professional instructor.",
+      "Parrafo1": "If you want to have a nautical baptism and discover if this is your element, you have this activity of two hours long where we will sail around Campello (Alicante) guided by a professional instructor.",
+      "Parrafo2": "Price: 40 euros per person."
     }
-
-
-
   },
   "alquileres": {
     "portada": "Rentals",
-    "introduccion": "an Canáataca ancantrarás la mayar afarta da carsas y práctacas para canvartarta an patrón. Las majaras anstractaras, anstalacaanas y barcas ascaala, para qaa adqaaaras la axparaancaa nacasaraa, nas han canvartada an la pramara ascaala dal país an númara da alamnas. Más da 40.000 antagaas alamnas nas avalan. ¿Qaaaras sar patrón? alaga ta tatalacaón:",
+    "introduccion": "Easy Sailing offers rentals boats with and without a navigation license. We are a school, so if you don ́t have a license and you would like to obtain it, we will help you to get it in a fast and easy way.",
     "precio": "Cost",
     "botonReserva": "BOOK WITH WHATSAPP",
     "botonFotos": "SEE MORE PHOTOS",
+    "tabarca1": "Discover Tabarca island",
+    "tabarca2": "with our rental boats",
     "hulk": {
       "titulo": "HULK",
       "modelo": "NEUMÁTICA BOMBARD 500 SUNRIDER 2023",
       "motor": "ENGINE SUZUKY 15 CV",
-      "eslora": "5 METROS",
+      "eslora": "5 METERS",
       "capacidad": "5 PEOPLE",
       "gasolina2": "10 € (2 Hours)",
       "gasolina4": "20 € (4 Hours)",
       "gasolina9": "30 € (9 Hours)",
-      "titulacion": "NO REQUIERE TITULACIÓN",
+      "titulacion": "NO LICENCE REQUIRED",
+      "titulo2": "2 HOURS",
       "precio2": "99 €",
+      "titulo4": "4 HOURS",
       "precio4": "170 €",
+      "titulo9": "9 HOURS",
       "precio9": "220 €",
-      "notaPrecio" : "Todas las tarifas incluyen 20 minutos de formación adicional de instructor náutico",
-      "reserva": "Hola, tengo interés en alquilar el barco HULK."
+      "notaPrecio" : "All rates include 20 minutes of additional training from a nautical instructor",
+      "reserva": "Hello, I want to rent the boat HULK."
     },
     "easy_sailing": {
       "titulo": "EASY SAILING",
       "modelo": "MOTORA QUICKSILVER 605 OPEN 2018",
       "motor": "ENGINE MERCURY 115 CV",
-      "eslora": "6 METROS",
-      "capacidad": "7 PERSONAS",
-      "titulacion": "TITULACIÓN REQUERIDA: LICENCIA DE NAVEGACIÓN",
-      "precio4": "4 HORAS: 200",
-      "precio9": "9 HORAS: 300",
-      "reserva": "Hola, tengo interés en alquilar el barco EASY SAILING."
+      "eslora": "6 METERS",
+      "capacidad": "7 PEOPLE",
+      "titulacion": "LICENCE REQUIRED: NAVIGATION LICENCE",
+      "titulo4": "4 HOURS",
+      "precio4": "200 €",
+      "titulo9": "9 HOURS",
+      "precio9": "300 €",
+      "reserva": "Hello, I want to rent the boat EASY SAILING."
     },
     "alma": {
       "titulo": "ALMA",
       "modelo": "MOTORA ASTILUX 600 OPEN 2023",
       "motor": "ENGINE SUZUKY 115 CV",
-      "eslora": "6 METROS",
-      "capacidad": "8 PERSONAS",
-      "titulacion": "TITULACIÓN REQUERIDA: LICENCIA DE NAVEGACIÓN",
-      "precio4": "4 HORAS: 250",
-      "precio9": "9 HORAS: 350",
-      "reserva": "Hola, tengo interés en alquilar el barco ALMA."
+      "eslora": "6 METERS",
+      "capacidad": "8 PEOPLE",
+      "titulacion": "LICENCE REQUIRED: NAVIGATION LICENCE",
+      "titulo4": "4 HOURS",
+      "precio4": "250 €",
+      "titulo9": "9 HOURS",
+      "precio9": "350 €",
+      "reserva": "Hello, I want to rent the boat ALMA."
     }
   },
-
   "opiniones": {
     "titulo": "What they say about us"
-  }
+  },
+  "actividades": {
+    "portada": "Activities",
+    "introduccion": "Easy Sailing offers a wide variety of Activities to enjoy the sea.",
+    "introduccion2": "Do not think twice and contact us with any questions you have.",
+    "introduccion3": "We are a Tourist Company authorized by the government of the Valencian Community.",
+    "precio": "Price",
+    "botonReserva": "BOOK VIA WHATSAPP",
+    "botonFotos": "SEE MORE PHOTOS",
+    "incluidoTitulo": "What's included",
+    "localidadTitulo": "Location",
+    "duracionTitulo": "Duration",
+    "capacidadTitulo": "Capacidad",
+    "precioTitulo": "Price",
+    "charterTitulo": "Charters",
+    "expTitulo": "Gift Experiences",
+    "sportTitulo": "Water Sports",
+    "partyTitulo": "Celebrations",
+    "empresasTitulo": "Other Activities",
+    "ReservaBoton": "Book Now",
+    "ConsultaBoton": "Check prices",
+    "charterTabarca" : {
+      "protitulo": "Tabarca Island",
+      "titulo": "Guided Visit with Skipper",
+      "subtitulo": "Discover the wonderful island of Tabarca with a guided tour leaving from Campello or Alicante.",
+      "localidad": "From Campello or Alicante",
+      "incluidos": "Snorkel, Paddle Surf and inflatable Boat with oar.",
+      "bebida": "Snack + 1 Drink included (unlimited water).",
+      "actividad": "The activity includes guided Snorkelling to the Pirate's cave, the possibility of practicing Paddle surfing and the use of the inflatable rowing Boat in the sea.",
+      "barco": "Skipper, Petrol and Cleaning included.",
+      "duracion": "4 Hours",
+      "capacidad": "7 People Max.",
+      "precio": "Price 375 €",
+      "aclaracion": "It is possible to hire up to 2 extra hours (30€ per hour).",
+      "aclaracion2": "25€ supplement for departures from Alicante.",
+      "aclaracion3": "The activity is conducted with a nautical school instructor, offering an opportunity to gain an introduction to navigation."
+    },
+    "charterBenidorm": {
+      "protitulo": "Benidorm Island",
+      "titulo": "Guided Visit with Skipper.",
+      "subtitulo": "Enjoy the surroundings of the island of Benidorm, a natural reserve to discover, with our guided tour.",
+      "localidad": "From Campello",
+      "incluidos": "Snorkel, Paddle Surf and inflatable Boat with oar.",
+      "barco": "Skipper, Petrol and Cleaning included.",
+      "bebida": "Snack + 1 Drink included (unlimited water).",
+      "actividad": "The activity includes the possibility of practicing Snorkeling, Paddle surfing and the use of the inflatable rowing Boat in the sea.",
+      "duracion": "4 Hours",
+      "capacidad": "7 People Max.",
+      "precio": "Price 350 €",
+      "aclaracion": "It is possible to hire up to 2 extra hours (25€ per hour).",
+      "aclaracion2": "The activity is conducted with a nautical school instructor, offering an opportunity to gain an introduction to navigation."
+    },
+    "expSolCena": {
+      "protitulo": "Sunset and Dinner",
+      "titulo": "Sunset and Dinner on board",
+      "subtitulo": "Come and enjoy this great experience with your partner, family or friends",
+      "localidad": "From Campello",
+      "incluidos": "Skipper + Petrol + Drinks + Dinner on board + Cleaning",
+      "barco": "Skipper, Petrol and Cleaning included.",
+      "bebida": "Dinner on board and Drinks",
+      "actividad": "If you have ever dreamed of a romantic dinner or with friends on board a boat watching the sunset, that day has arrived. Contact us!",
+      "duracion": "2 Hours",
+      "capacidad": "7 People Max.",
+      "precio": "150€",
+      "precioTexto": "Private 2 People",
+      "precio2": " 50€",
+      "precio2Texto": " From 4 People"
+    },
+    "expSolDesayuno": {
+      "protitulo": "Breakfast and Sunrise",
+      "titulo": "Sunrise and Breakfast on board",
+      "subtitulo": "Come and enjoy this great experience with your partner, family or friends",
+      "localidad": "From Campello",
+      "incluidos": "Skipper + Petrol + Drinks + Breakfast on board + Cleaning",
+      "barco": "Skipper, Petrol and Cleaning included.",
+      "bebida": "Dinner on board and Drinks",
+      "actividad": "Dawn as you have never experienced it before, from the beauty and tranquility of being in the middle of the sea, and accompanied by a delicious breakfast on board.",
+      "duracion": "2 Hours",
+      "capacidad": "7 People Max.",
+      "precio": "125€",
+      "precioTexto": "Private 2 People",
+      "precio2": " 35€",
+      "precio2Texto": " From 4 People"
+    },
+    "sportCalasSUP": {
+      "protitulo": "Coves Route",
+      "titulo": "Including Snorkel and Paddle Surf",
+      "subtitulo": "Explore the Coves of Campello and surrounding areas with stops for Snorkeling and Paddle surfing.",
+      "localidad": "From Campello",
+      "incluidos": "Skipper + Petrol + Snorkel equipment + Paddle Surf + Snack and 1 Drink + Cleaning",
+      "barco": "Skipper, Petrol and Cleaning included.",
+      "bebida": "Snack + 1 Drink included (unlimited water).",
+      "actividad": "ESCRIBIR AQUI MEJOR DESCRIPCION DE LA ACTIVIDAD.",
+      "duracion": "2'5 Hours",
+      "capacidad": "7 People Max.",
+      "precio": "100€",
+      "precioTexto": "Private 2 People",
+      "precio2": " 35€",
+      "precio2Texto": " From 4 People"
+    },
+    "sportDiving": {
+      "protitulo": "Scuba Diving Boat",
+      "titulo": "Scuba Diving Boat",
+      "subtitulo": "Do you need a Boat and Skipper for your diving trip with your own equipment? We organize it for you.",
+      "precio": "Price according to the dive to be carried out. Check with the school."
+    },
+    "sportMindful": {
+      "protitulo": "Yoga and Mindfulness at Sea",
+      "titulo": "Yoga and Mindfulness at Sea",
+      "subtitulo": "Coming soon. Contact us to stay informed."
+    },
+    "sportVelaCrucero": {
+      "protitulo": "Cruise Sailing",
+      "titulo": "Cruise Sailing",
+      "subtitulo": "Coming soon. Contact us to stay informed."
+    },
+    "partyBachelor": {
+      "titulo": "Bachelor/Bachelorette Parties",
+      "subtitulo": "If you want to celebrate your bachelor/bachelorette party at sea, let us know what you would like to do, and we will organize it for you.",
+      "aclaracion": "We have a female skipper available for women's bachelorette parties.",
+      "precio": "Depends on the charter to be arranged. Please consult with the school."
+    },
+    "partyBirthday": {
+      "titulo": "Birthdays at Sea",
+      "subtitulo": "If you want to surprise your friends or family and celebrate in a different way, contact us.",
+      "aclaracion": "We will take care of everything: decoration, cake, and surprises if desired.",
+      "precio": "Depends on the charter to be arranged. Please consult with the school."
+    },
+    "partyPhotos": {
+      "titulo": "On-Board Photo Shoot",
+      "subtitulo": "If you would like to have a beautiful photo shoot at sea, we provide\nour boats for a sunrise or sunset charter of your choice.",
+      "aclaracion": "You can bring your own photographer or we can arrange it for you.",
+      "precio": "Depends on the charter to be arranged; please consult with the school."
+    },
+    "partyRegalo": {
+      "titulo": "Gift Voucher",
+      "subtitulo": "If you want to surprise your loved one with an original gift of one of our nautical activities, provide us with their details, and we will prepare a beautiful personalized gift card.",
+      "aclaracion": "Gift voucher included in the activity to be gifted at no additional cost.",
+      "precio": "Gift voucher."
+    },
+    "empresas": {
+      "titulo": "Corporate Club",
+      "subtitulo": "If you are a company and want to have privileges for your employees in nautical training and activities, we propose:",
+      "parrafo1": "Nautical training adapted to your work schedules and the possibility of being held at your facilities.",
+      "parrafo2": "Exclusive discounts on training, charters, and rentals.",
+      "parrafo3": "Organization of outings for employees and their families."
+    },
+    "customMade": {
+      "titulo": "Customized Activity",
+      "subtitulo": "If you have not found what you are looking for in our activities, send us a message explaining the activity you would like to do and we will make a tailor-made program for you."
+    }
+  },
+  "contacta": "Contact us"
+
 
 }
