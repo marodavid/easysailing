@@ -190,7 +190,7 @@ function MenuBanderas() {
 									<MenuItem onClick={() => i18n.changeLanguage('es')}>
 										<FlagIconsES title="Español" />
 									</MenuItem>
-									<MenuItem onClick={() => i18n.changeLanguage('en-GB')}>
+									<MenuItem onClick={() => i18n.changeLanguage('en')}>
 										<FlagIconsGB title="English" />
 									</MenuItem>
 									<MenuItem onClick={() => i18n.changeLanguage('fr')}>
