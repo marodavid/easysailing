@@ -1,10 +1,326 @@
 {
   "cookies": {
-    "text": "Este sitio web utiliza cookies para mejorar la experiencia de navegación. ",
-    "buttonAccept": "OK"
+    "text": "Esta web usa cookies propias o de terceros para facilitar su navegación. Para continuar navegando acepte su uso, en caso contrario la página web puede que no funcione correctamente.",
+    "buttonAccept": "Aceptar Cookies",
+    "buttonDecline": "Declinar Cookies"
   },
-  "startPage": {
-    "part1": "Edita <1>src/App.js</1> y salva para recargar.",
-    "part2": "Aprende React"
-  }
+  "idioma": "es",
+  "menuOpciones": {
+    "inicio": "Inicio",
+    "cursos": "Cursos",
+    "actividades": "Actividades",
+    "alquileres": "Alquileres",
+    "whoweare": "Quienes somos",
+    "colaboraciones": "Opiniones",
+    "contacto": "Contacto"
+  },
+  "whatsappButton": "Hola, quiero más información sobre vuestra escuela.",
+  "whoweare": {
+    "portada": "Quienes Somos",
+    "parrafo1": "Easy Sailing surge de nuestra pasión por el mar y la ilusión de compartir esta pasión, a través de la enseñanza, haciéndola llegar al máximo público posible.",
+    "parrafo2": "Somos un equipo dedicado, multilingüe y comprometido a brindar formación de calidad y emocionantes actividades náuticas para todo tipo de público.",
+    "parrafo3": "Nuestro logo representa la sencillez con la que un niño entiende que se navega, tomando esa sencillez como identidad y filosofía de aprendizaje, y por ende el nombre “Easy Sailing”.",
+    "parrafo4": "Nuestro emblema “Cumpliendo Sueños” proviene de nuestra creencia en que el mar enriquece la vida, y queremos formar parte de todas aquellas personas para las que el aprendizaje y las actividades náuticas realizadas, son sueños cumplidos.",
+    "_parrafo5": "Utilizamos la terminología en inglés dado que el alcance de nuestra escuela es internacional, al estar formado nuestro equipo por personas multilingües.",
+    "misionTitulo": "Misión",
+    "misionTexto": "Tener el mayor alcance posible a través de la formación y actividades náuticas.",
+    "visionTitulo": "Visión",
+    "visionTexto": "Ser la escuela de referencia en Campello (Alicante).",
+    "valoresTitulo": "Valores",
+    "valoresTexto": "Mantener alto valor de calidad y fomentar la actividad a mujeres y niños, así como sectores menos favorecidos.",
+    "equipo": "Nuestro Equipo",
+    "paz": {
+      "nombre": "Paz Díaz.",
+      "parrafo1": "Emprendedora de nacionalidad española, Licenciada en ADE, Padi Advanced de buceo y Patrón Profesional de Embarcaciones de Recreo.",
+      "parrafo2": "Primera mujer fundadora e instructora de una escuela náutica en la provincia de Alicante.",
+      "parrafo3": "Ha estudiado y trabajado en múltiples países europeos y desde hace años, regatista formando parte de la tripulación de la embarcación Limbo de Altea.",
+      "idiomas": "Idiomas: Español, Inglés, Francés y Alemán."
+    },
+    "jean": {
+      "nombre": "Jean David López",
+      "parrafo1": "Emprendedor, Patrón Portuario, de doble nacionalidad Francesa y Española; que viene desarrollando la actividad de Charter desde 2018.",
+      "parrafo2": "Tras haber vivido en varios países y haber dirigido su propia empresa en París, aporta una visión internacional a la escuela y ofrece un mejor servicio a nuestros residentes Francófonos de Campello y alrededores.",
+      "parrafo3": "Ambos compartimos la pasión por el mar, somos vecinos de Campello y estamos comprometidos con el desarrollo del puerto y la promoción de actividades náuticas.",
+      "idiomas": "Idiomas: Español, Inglés, Francés y Alemán."
+    }
+  },
+  "cursos": {
+    "portada": "Cursos y Licencias",
+    "introduccion": "Easy Sailing ofrece formaciones oficiales así como otras particulares.",
+    "introduccion2":"Vamos adaptando nuestra oferta a la demanda que nos hacéis llegar.",
+    "introduccion3": "Somos Escuela Oficial homologada por el gobierno de la Comunidad Valenciana.",
+    "introduccion4": "Esperamos pronto introducir el PER y la vela de crucero.",
+    "LicenciaNavegacion": {
+      "Reserva": "Hola, quiero reservar plaza para la Licencia de Navegación.",
+      "ReservaBoton": "Reservar ahora",
+      "Titulo": "Licencia de Navegacion",
+      "Subtitulo": "Primera titulación recreativa y única que no tiene examen y no caduca y se puede obtener a partir de los 16 años con autorización de los padres.",
+      "Parrafo1": "La Licencia de navegación es la primera titulación recreativa y única que no tiene examen y no caduca y se puede obtener a partir de los 16 años con autorización de los padres.",
+      "Parrafo2": "Habilita para el gobierno de embarcaciones de recreo de hasta 6 metros de eslora para la navegación costera a una distancia máxima de 2 millas de un puerto o lugar de abrigo en navegación diurna.",
+      "Parrafo3": "Además podrás llevar motos náuticas sin límite de potencia.",
+      "Parrafo4": "Para la obtención de la Licencia se exige que se realice un reconocimiento médico.",
+      "Parrafo5": "Easy Sailing ha conseguido cerrar acuerdos para que sus alumnos puedan realizar dicho reconocimiento al precio más económico del mercado (te facilitamos todos los datos tras confirmar la reserva).",
+      "Parrafo6": "Precio por persona 80 eur",
+      "Parrafo7": "Oferta pareja a 75 eur cada uno.",
+      "Bulletpoint": {
+        "Heading": "Atribuciones Licencia de Navegación",
+        "Punto1Texto": "La Licencia de Navegación permite gobernar embarcaciones de un máximo de 6 metros de eslora.",
+        "Punto2Texto": "La distancia máxima permitida para alejarse de la costa con la Licencia de Navegación son 2 millas.",
+        "Punto3Texto": "Con la Licencia de Navegación solo está permitida la navegación diurna.",
+        "Punto4Texto": "La Licencia de Navegación no establece límite de potencia en las embarcaciones, ni motos de agua.",
+        "Punto5Texto": "La Licencia de Navegación habilita para gobernar todo tipo de motos náuticas."
+      }
+    },
+    "PerVela": {
+      "Reserva": "Hola, quiero más información sobre el curso de PER y vela.",
+      "ReservaBoton": "Enviar Mensaje",
+      "Titulo": "P.E.R.",
+      "Subtitulo": "Titulo de Patron de Embarcaciones Recreativas",
+      "Parrafo1": "Estamos haciendo todo lo posible para traer la vela de crucero a Campello.",
+      "Parrafo2": "Si estás interesado en recibir clases de vela de crucero, mandanos un mensaje y te contactaremos tan pronto tengamos disponible esta modalidad."
+    },
+    "LnParticular": {
+      "Reserva": "Hola, quiero reservar plaza para la Licencia de Navegación Intensiva.",
+      "ReservaBoton": "Reservar ahora",
+      "Titulo": "LN Particular Intensiva",
+      "Subtitulo": "Somos la primera escuela de la provincia de Alicante en ofrecer la Licencia de Navegación Intensiva.",
+      "Parrafo1": "Easy Sailing es la escuela de referencia para nuestro público extranjero al ser capaz de dar servicio tanto en Castellano como Inglés, Francés y Alemán.",
+      "Parrafo2": "Atendiendo a la demanda y necesidades de nuestro público, somos la primera escuela de la provincia de Alicante en ofrecer la Licencia de Navegación Intensiva.",
+      "Parrafo3": "Se realiza en parejas con un total de 2 alumnos por grupo, pudiendo elegir el idioma en el que se imparte la clase entre castellano, inglés y francés y con una duración de 4 horas para practicar de forma intensiva y clase particular, todas las maniobras necesarias para gobernar de forma correcta una embarcación de 6 metros de eslora.",
+      "Parrafo4": "Precio por persona: 150 euros."
+    },
+    "ClasesPerfec": {
+      "Reserva": "Hola, quiero reservar plaza para las Clases de perfeccionamiento.",
+      "ReservaBoton": "Reservar ahora",
+      "Titulo": "Clases Perfeccionamiento",
+      "Subtitulo": "Si ya cuentas con tu Licencia de Navegación, pero por falta de práctica no te sientes con la suficiente seguridad de gobernar una embarcación, tenemos varias opciones para ti.",
+      "Parrafo1": "Si ya cuentas con tu Licencia de Navegación, pero por falta de práctica no te sientes con la suficiente seguridad de gobernar una embarcación, tenemos varias opciones para ti.",
+      "ParticularesTitulo": "Particulares",
+      "ParticularesTexto": "clases particulares a 40 euros la hora.",
+      "GruposTitulo": "Grupos",
+      "GruposTexto": "Grupos de 4 personas con 2 horas de duración",
+      "GruposPrecio": "Precio 40 Euros por persona.",
+      "MixtoTitulo": "Mixto",
+      "MixtoTexto": "Realizamos contigo una revisión de 20 minutos, te facilitamos una guía de instrucciones prácticas y ponemos a tu disposición una neumática 2 horas, que podréis utilizar para un máximo de 5 personas y así poder repasar por vuestra cuenta las maniobras que queráis con la seguridad que una neumática ofrece.",
+      "MixtoPrecio": "Precio 99 euros."
+    },
+    "IntroNavegacion": {
+      "Reserva": "Hola, quiero reservar plaza para un bautizo náutico.",
+      "ReservaBoton": "Reservar ahora",
+      "Titulo": "Bautismo Naútico para Grupos",
+      "Subtitulo": "Si quieres tener un bautizo náutico y descubrir si este es tu elemento, vive la experiencia de introducción a la navegación a través de esta actividad de 2 horas de duración por la calas de Campello guiada por un instructor profesional.",
+      "Parrafo1": "Si quieres tener un bautizo náutico y descubrir si este es tu elemento, vive la experiencia de introducción a la navegación a través de esta actividad de 2 horas de duración por la calas de Campello guiada por un instructor profesional.",
+      "Parrafo2": "Precio 40 Euros por persona."
+    }
+  },
+  "alquileres": {
+    "portada": "Alquileres",
+    "introduccion": "Easy Sailing ofrece alquileres con y sin licencia de navegación. Somos escuela, por lo que si no dispones de licencia y te gustaría obtenerla, te ayudamos a conseguirla de una forma ágil y rápida.",
+    "precio": "Precio",
+    "botonReserva": "RESERVA EN WHATSAPP",
+    "botonFotos": "VER MAS FOTOS",
+    "tabarca1": "Descubre la isla de Tabarca",
+    "tabarca2": "con nuestras embarcaciones de alquiler",
+    "hulk": {
+      "titulo": "HULK",
+      "modelo": "NEUMÁTICA BOMBARD 500 SUNRIDER 2023",
+      "motor": "MOTOR SUZUKY 15 CV",
+      "eslora": "5 METROS",
+      "capacidad": "5 PERSONAS",
+      "gasolina2": "10 € (2 Horas)",
+      "gasolina4": "20 € (4 Horas)",
+      "gasolina9": "30 € (9 Horas)",
+      "titulacion": "NO REQUIERE TITULACIÓN",
+      "titulo2": "2 HORAS",
+      "precio2": "99 €",
+      "titulo4": "4 HORAS",
+      "precio4": "170 €",
+      "titulo9": "9 HORAS",
+      "precio9": "220 €",
+      "notaPrecio" : "* Todas las tarifas incluyen 20 minutos de formación adicional de instructor náutico",
+      "reserva": "Hola, tengo interés en alquilar el barco HULK."
+    },
+    "easy_sailing": {
+      "titulo": "EASY SAILING",
+      "modelo": "MOTORA QUICKSILVER 605 OPEN 2018",
+      "motor": "MOTOR MERCURY 115 CV",
+      "eslora": "6 METROS",
+      "capacidad": "7 PERSONAS",
+      "titulacion": "REQUIERE LICENCIA DE NAVEGACIÓN",
+      "titulo4": "4 HORAS",
+      "precio4": "200 €",
+      "titulo9": "9 HORAS",
+      "precio9": "300 €",
+      "reserva": "Hola, tengo interés en alquilar el barco EASY SAILING."
+    },
+    "alma": {
+      "titulo": "ALMA",
+      "modelo": "MOTORA ASTILUX 600 OPEN 2023",
+      "motor": "MOTOR SUZUKY 115 CV",
+      "eslora": "6 METROS",
+      "capacidad": "8 PERSONAS",
+      "titulacion": "REQUIERE LICENCIA DE NAVEGACIÓN",
+      "titulo4": "4 HORAS",
+      "precio4": "250 €",
+      "titulo9": "9 HORAS",
+      "precio9": "350 €",
+      "reserva": "Hola, tengo interés en alquilar el barco ALMA. "
+    }
+  },
+  "opiniones": {
+    "titulo": "¿Qué dicen de nosotros?"
+  },
+  "actividades": {
+    "portada": "Actividades",
+    "introduccion": "Easy Sailing te ofrece una amplia variedad de Actividades para que disfrutes del mar.",
+    "introduccion2": "No lo pienses más y contáctanos con cualquier duda que tengas.",
+    "introduccion3": "Somos Empresa Turistica autorizada por el gobierno de la Comunidad Valenciana.",
+    "precio": "Precio",
+    "botonReserva": "RESERVA EN WHATSAPP",
+    "botonFotos": "VER MAS FOTOS",
+    "incluidoTitulo": "Qué incluye",
+    "localidadTitulo": "Ubicación",
+    "duracionTitulo": "Duración",
+    "capacidadTitulo": "Capacidad",
+    "precioTitulo": "Precio",
+    "charterTitulo": "Charters",
+    "expTitulo": "Regala Experiencias",
+    "sportTitulo": "Deportes Acuáticos",
+    "partyTitulo": "Celebraciones",
+    "empresasTitulo": "Otras Actividades",
+    "ReservaBoton": "Reservar ahora",
+    "ConsultaBoton": "Consultar precios",
+    "charterTabarca" : {
+      "protitulo": "Isla de Tabarca",
+      "titulo": "Visita guiada con patrón",
+      "subtitulo": "Descubre la maravillosa isla de Tabarca con una visita guiada saliendo desde Campello o Alicante.",
+      "localidad": "Desde Campello o Alicante",
+      "incluidos": "Snorkel, Padel Surf y Barco a remos.",
+      "bebida": "Snack + 1 Bebida incluida (agua ilimitada).",
+      "actividad": "La actividad incluye Snorkel guiado a la cueva del Pirata, la posibilidad de practicar Padel Surf y el uso del Barco hinchable a remo en el mar.",
+      "barco": "Patrón, gasolina y limpieza incluidos.",
+      "duracion": "4 Horas",
+      "capacidad": "7 Personas Max.",
+      "precio": "Precio 375 €",
+      "aclaracion": "Es posible contratar hasta 2 horas extras (30€ por hora).",
+      "aclaracion2": "Suplemento 25 € para salidas desde Alicante.",
+      "aclaracion3": "La actividad se realiza con un instructor de escuela náutica, teniendo la oportunidad de aprovechar la experiencia para tener una introducción a la navegación."
+    },
+    "charterBenidorm": {
+      "protitulo": "Isla de Benidorm",
+      "titulo": "Visita guiada con patrón",
+      "subtitulo": "Disfruta los alrededores de la isla de Benidorm, una reserva natural por descubrir, con nuestra visita guiada.",
+      "localidad": "Desde Campello",
+      "incluidos": "Snorkel, Padel Surf y Barco a remos.",
+      "barco": "Patrón, gasolina y limpieza incluidos.",
+      "bebida": "Snack + 1 Bebida incluida (agua ilimitada).",
+      "actividad": "La actividad incluye la posibilidad de practicar Snorkel, Padel Surf y el uso del Barco hinchable a remo en el mar.",
+      "duracion": "4 Horas",
+      "capacidad": "Max. 7 personas",
+      "precio": "Precio 350 €",
+      "aclaracion": "Es posible contratar hasta 2 horas extras (25€ por hora).",
+      "aclaracion2": "La actividad se realiza con un instructor de escuela náutica, teniendo la oportunidad de aprovechar la experiencia para tener una introducción a la navegación."
+    },
+    "expSolCena": {
+      "protitulo": "Atardecer y Cena",
+      "titulo": "Puesta de sol y Cena a bordo",
+      "subtitulo": "Ven a disfrutar de esta gran experiencia con tu pareja, familia o amigos",
+      "localidad": "Desde Campello",
+      "incluidos": "Patrón + Gasolina + Bebidas + Cena a bordo + Limpieza",
+      "barco": "Patrón, gasolina y limpieza incluidos.",
+      "bebida": "Cena a bordo y Bebidas",
+      "actividad": "Si alguna vez soñaste con una cena romántica o con amigos a bordo de un barco contemplando el atardecer, ese día ha llegado. ¡Contáctanos!.",
+      "duracion": "2 Horas",
+      "capacidad": "Max. 7 personas",
+      "precio": "150€",
+      "precioTexto": "Privado 2 personas",
+      "precio2": " 50€",
+      "precio2Texto": " Desde 4 personas"
+    },
+    "expSolDesayuno": {
+      "protitulo": "Desayuno en el Mar",
+      "titulo": "Salida del sol y Desayuno a bordo",
+      "subtitulo": "Ven a disfrutar de esta gran experiencia con tu pareja, familia o amigos",
+      "localidad": "Desde Campello",
+      "incluidos": "Patrón + Gasolina + Bebidas + Desayuno a bordo + Limpieza",
+      "barco": "Patrón, gasolina y limpieza incluidos.",
+      "bebida": "Desayuno a bordo y Bebidas",
+      "actividad": "El amanecer como nunca antes lo has vivido, desde la belleza y la tranquilidad de estar en medio del mar, y acompañado de un delicioso desayuno a bordo.",
+      "duracion": "2 Horas",
+      "capacidad": "Max. 7 personas",
+      "precio": "125€",
+      "precioTexto": "Privado 2 personas",
+      "precio2": " 35€",
+      "precio2Texto": " Desde 4 personas"
+    },
+    "sportCalasSUP": {
+      "protitulo": "Ruta de Calas",
+      "titulo": "Con Snorkel y Padel Surf",
+      "subtitulo": "Descubre las calas de Campello y alrededores con parada de Snorkel y Padel Surf",
+      "localidad": "Desde Campello",
+      "incluidos": "Patrón + Gasolina + Equipos de Snorkel + Padel Surf + Snack y 1 Bebida + Limpieza",
+      "barco": "Patrón, gasolina y limpieza incluidos.",
+      "bebida": "Snack + 1 Bebida incluida (agua ilimitada).",
+      "actividad": "ESCRIBIR AQUI MEJOR DESCRIPCION DE LA ACTIVIDAD.",
+      "duracion": "2'5 Horas",
+      "capacidad": "Max. 7 personas",
+      "precio": "100€",
+      "precioTexto": "Privado 2 personas",
+      "precio2": " 35€",
+      "precio2Texto": " Desde 4 personas"
+    },
+    "sportDiving": {
+      "protitulo": "Barco para Submarinismo",
+      "titulo": "Barco para Submarinismo",
+      "subtitulo": "¿Necesitas Barco y Patron para tu salida de buceo con tu propio equipo? Nosotros te lo organizamos.",
+      "precio": "Precio según la inmersión a realizar. Consultar con la escuela."
+    },
+    "sportMindful": {
+      "protitulo": "Yoga y Mindfulness en el mar",
+      "titulo": "Yoga y Mindfulness en el mar",
+      "subtitulo": "Proximamente. Contacta con nosotros para mantenerte informada."
+    },
+    "sportVelaCrucero": {
+      "protitulo": "Crucero de vela",
+      "titulo": "Crucero de vela",
+      "subtitulo": "Proximamente. Contacta con nosotros para mantenerte informado."
+    },
+    "partyBachelor": {
+      "titulo": "Despedidas de Soltero/a",
+      "subtitulo": "Si quieres celebrar tu despedida en el mar, cuéntanos que te gustaría realizar y nosotros te lo organizamos.",
+      "aclaracion": "Disponemos de Patrón femenino para las despedidas de mujeres.",
+      "precio": "Segun charter a realizar. Consultar con la Escuela."
+    },
+    "partyBirthday": {
+      "titulo": "Cumpleaños en el mar",
+      "subtitulo": "Si quieres sorprender a tus amigos o familiares y celebrar de una manera diferente, ponte en contacto con nosotros.",
+      "aclaracion": "Nosotros nos encargamos de todo: decoración, tarta y sorpresas si lo deseas.",
+      "precio": "Segun charter a realizar. Consultar con la Escuela."
+    },
+    "partyPhotos": {
+      "titulo": "Sesión fotográfica a bordo",
+      "subtitulo": "Si te gustaría realizar un bonito reportaje fotográfico en el mar, ponemos a tu disposición nuestras embarcaciones y realizamos el charter de amanecer o atardecer que desees.",
+      "aclaracion": "Puedes traer tu propio fotógrafo o nos encargamos de gestionarlo.",
+      "precio": "Segun charter a realizar. Consultar con la Escuela."
+    },
+    "partyRegalo": {
+      "titulo": "Bono Regalo",
+      "subtitulo": "Si quieres sorprender a tu ser querido, con un regalo original de alguna de nuestras actividades náuticas, pásanos sus datos y te preparamos una bonita tarjeta regalo personalizada.",
+      "aclaracion": "Bono regalo incluido en la actividad a regalar sin coste adicional.",
+      "precio": "Bono Regalo"
+    },
+    "empresas": {
+      "titulo": "Club para Empresas",
+      "subtitulo": "Si eres empresa y quieres contar con privilegios para tus empleados en formaciones y actividades náuticas, te proponemos:",
+      "parrafo1": "Formaciones en titulaciones náuticas adaptadas a vuestros horarios de trabajo y con la posibilidad de ser impartidas en vuestra instalaciones.",
+      "parrafo2": "Descuento exclusivos en formaciones, charter y alquileres.",
+      "parrafo3": "Organización de salidas para trabajadores y familiares."
+    },
+    "customMade": {
+      "titulo": "Actividades a medida",
+      "subtitulo": "Si no has encontrado lo que estás buscando en nuestras actividades, mándanos un mensaje explicándonos la actividad que te gustaría realizar y te realizamos un programa a medida."
+    }
+  },
+  "contacta": "Contacta con nosotros"
+
 }

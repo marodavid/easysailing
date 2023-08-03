@@ -1,10 +1,326 @@
 {
   "cookies": {
-    "text":"Ce site utilise des cookies pour améliorer l'expérience utilisateur. ",
-    "buttonAccept": "OK"
+    "text":"Ce site utilise ses propres cookies ou ceux de tiers pour faciliter votre navigation. Pour continuer à naviguer, acceptez son utilisation, sinon la page Web risque de ne pas fonctionner correctement.",
+    "buttonAccept": "Accepter les cookies",
+    "buttonDecline": "Refuser les cookies"
   },
-  "startPage": {
-    "part1": "Modifiez <1>src/App.js</1> et enregistrez pour recharger.",
-    "part2": "Apprendre React"
-  }
+  "idioma": "fr",
+  "menuOpciones": {
+    "inicio": "Page d´accueil",
+    "cursos": "Cours",
+    "actividades": "Activités",
+    "alquileres": "Locations",
+    "whoweare": "Qui Sommes Nous",
+    "colaboraciones": "Commentaires",
+    "contacto": "Contact"
+  },
+  "whatsappButton": "Bonjour, je souhaite plus d'informations sur votre école.",
+  "whoweare": {
+    "portada": "Qui Sommes Nous",
+    "parrafo1": "Easy Sailing est née de notre passion pour la mer et du désir de partager cette passion, à travers l'enseignement, en la rendant accessible au plus grand nombre.",
+    "parrafo2": "Nous sommes une équipe dévouée, polyglotte et engagée à offrir une formation de qualité et des activités nautiques passionnantes dédiée à tout public.",
+    "parrafo3": "Notre logo représente la simplicité avec laquelle un enfant comprend la navigation, en faisant de cette simplicité notre identité et notre philosophie d'apprentissage, d’où le nom “Easy Sailing“.",
+    "parrafo4": "Notre emblème “Réaliser vos rêves“ découle de notre conviction que la mer enrichit la vie, et nous voulons faire partie de toutes ces personnes pour qui l'apprentissage et les activités nautiques sont des rêves accomplis.",
+    "_parrafo5": "Nous utilisons la terminologie en anglais car notre école a une portée internationale, grâce à une équipe polyglotte.",
+    "_misionTitulo": "Mission",
+    "_misionTexto": "Atteindre le plus grand nombre possible grâce à la formation et aux activités nautiques.",
+    "_visionTitulo": "Vision",
+    "_visionTexto": "Être l'école de référence à El Campello (Alicante).",
+    "_valoresTitulo": "Valeurs",
+    "_valoresTexto": "Maintenir un haut niveau de qualité et encourager l'activité chez les femmes, les enfants et les secteurs défavorisés.",
+    "_equipo": "Notre équipe",
+    "paz": {
+      "nombre": "Paz Díaz.",
+      "parrafo1": "Entrepreneur de nationalité espagnole, titulaire d'une licence en administration des entreprises, Padi Advanced en plongée et Skipper Professionnel de Plaisance.",
+      "parrafo2": "Première femme fondatrice et instructrice d'une école de navigation dans la province d'Alicante.",
+      "parrafo3": "Elle a étudié et travaillé dans plusieurs pays européens et depuis plusieurs années membre de l'équipage du voilier de régate le Limbo situé à Altea.",
+      "idiomas": "Langues : Espagnol, Anglais, Français et Allemand."
+    },
+    "jean": {
+      "nombre": "Jean David López",
+      "parrafo1": "Entrepreneur, Patron portuaire ayant la double nationalité Française et Espagnole. Il exerce des activités de location de bateaux depuis 2018.",
+      "parrafo2": "Ayant vécu dans plusieurs pays et dirigé sa propre entreprise à Paris, il apporte une vision internationale à l'école et offre un meilleur service à nos résidents francophones de Campello et de ses environs.",
+      "parrafo3": "Nous partageons tous deux la passion pour la mer, nous sommes voisins del Campello et nous nous engageons dans le développement du port et la promotion des activités nautiques.",
+      "idiomas": "Langues : Espagnol, Français et Anglais."
+    }
+  },
+  "cursos": {
+    "portada": "Cours et Licences",
+    "introduccion": "Easy Sailing offre des formations officielles ainsi que personnalisées.",
+    "introduccion2":"Nous adaptons en permanence notre offre selon vos demandes.",
+    "introduccion3": "Nous sommes une entreprise officiellement homologuée par la région de Valence.",
+    "introduccion4": "Bientôt nous vous offrirons le PER ainsi que des cours de voile.",
+    "LicenciaNavegacion": {
+      "Reserva": "Bonjour, je souhaite réserver une place pour la Licence de Navigation.",
+      "ReservaBoton": "Réservez maintenant",
+      "Titulo":"Licence de Navigation",
+      "Subtitulo": "La licence de navigation est la première et la seule qualification récréative qui n'a pas d'examen et n'expire pas et peut être obtenue à partir de 16 ans avec une autorisation parentale.",
+      "Parrafo1": "La licence de navigation est la première et la seule qualification récréative qui n'a pas d'examen et n'expire pas et peut être obtenue à partir de 16 ans avec une autorisation parentale.",
+      "Parrafo2": "Autorise au gouvernement des bateaux de plaisance jusqu'à 6 mètres de longueur pour la navigation côtière à une distance maximale de 2 milles d'un port ou d'un lieu d'abri en navigation de jour.",
+      "Parrafo3": "Vous pouvez également prendre des jet skis sans limite de puissance.",
+      "Parrafo4": "Pour obtenir la licence, un examen médical est requis.",
+      "Parrafo5": "Easy Sailing a réussi à conclure des accords pour que ses élèves puissent effectuer cette reconnaissance au prix le moins cher du marché (nous vous fournissons toutes les informations après confirmation de la réservation).",
+      "Parrafo6": "Prix par personne: 80 eur",
+      "Parrafo7": "Offre Couple pour 75 eur par personne.",
+      "Bulletpoint": {
+        "Heading": "Attributions Licence de Navigation",
+        "Punto1Texto": "La licence de navigation vous permet de gouverner des bateaux d'une longueur maximale de 6 mètres.",
+        "Punto2Texto": "Cette licence vous permettra également de naviguer jusqu’à 2 milles d’un abri.",
+        "Punto3Texto": "En effet cette licence vous permettra exclusivement la navigation de jour.",
+        "Punto4Texto": "La licence de navigation n'établit pas de limite de puissance sur les bateaux ou les Jet Skis.",
+        "Punto5Texto": "Cette licence vous permettra de piloter tout type de Jet Skis."
+      }
+    },
+    "PerVela": {
+      "Reserva": "Bonjour, je souhaite plus d'informations sur PER et Voile.",
+      "ReservaBoton": "Envoyer un message",
+      "Titulo": "P.E.R. et Voile",
+      "Subtitulo": "Cliquez ici pour plus d'informations",
+      "Parrafo1": "Nous faisons tout notre possible pour amener la pratique de la voile à El Campello.",
+      "Parrafo2": "Si vous êtes intéressé à recevoir des cours de voiliers , envoyez-nous un message et nous vous contacterons dès que cette modalité sera disponible."
+    },
+    "LnParticular": {
+      "Reserva": "Bonjour, je souhaite réserver pour votre Licence de Navigation Privé Intensif.",
+      "ReservaBoton": "Réservez maintenant",
+      "Titulo": "LN Particulier Intensif",
+      "Subtitulo": "Easy Sailing est l'école de référence pour notre public étranger, pouvant fournir un service en Espagnol, en Anglais, en Français et en Allemand.",
+      "Parrafo1": "Easy Sailing est l'école de référence pour notre public étranger, pouvant fournir un service en Espagnol, en Anglais, en Français et en Allemand.",
+      "Parrafo2": "En réponse à la demande et aux besoins de notre public, nous sommes la première école de la province d'Alicante à proposer la licence de navigation de façon intensive.",
+      "Parrafo3": "Elle se fait en binôme avec un total de 2 élèves par groupe, pouvant choisir la langue dans laquelle le cours est dispensé entre l'espagnol, l'anglais et le français et d'une durée de 4 heures pour pratiquer de manière intensive et privée, toutes les manœuvres nécessaires afin de naviguer correctement sur un bateau de 6 mètres de long.",
+      "Parrafo4": "Prix par personne : 150 euros."
+    },
+    "ClasesPerfec": {
+      "Reserva": "Bonjour, je souhaite réserver vos cours de perfectionnement.",
+      "ReservaBoton": "Réservez maintenant",
+      "Titulo": "Cours de Perfectionnement",
+      "Subtitulo": "Si vous avez déjà votre licence de navigation, mais que par manque de pratique vous ne vous sentez pas suffisamment en confiance pour diriger un bateau, nous avons plusieurs options pour vous.",
+      "Parrafo1": "Si vous avez déjà votre licence de navigation, mais que par manque de pratique vous ne vous sentez pas suffisamment en confiance pour diriger un bateau, nous avons plusieurs options pour vous.",
+      "ParticularesTitulo": "Particuliers",
+      "ParticularesTexto": "cours particuliers à 40 euros de l'heure.",
+      "GruposTitulo": "Groupe",
+      "GruposTexto": "Groupes de 4 personnes d'une durée de 2 heures.",
+      "GruposPrecio": "Prix 40 euros par personne.",
+      "MixtoTitulo": "Mixte",
+      "MixtoTexto": "Nous réalisons avec vous un bilan de 20 minutes, nous vous fournirons un guide pratique d'instruction et nous vous confierons un bateau semi rigide durant 2 heures, que vous pourrez utiliser pour 5 personnes maximum et ainsi pouvoir réviser sur faire vous-même les manœuvres utiles au bon fonctionnement d’un bateau tout en ayant la sécurité d’un semi rigide.",
+      "MixtoPrecio": "Prix 99 euros ( en tout )."
+    },
+    "IntroNavegacion": {
+      "Reserva": "Bonjour, je souhaite réserver une place pour votre Baptême Nautique pour les Groupes.",
+      "ReservaBoton": "Réservez maintenant",
+      "Titulo": "Baptême Nautique pour les Groupes",
+      "Subtitulo": "Si vous souhaitez faire un baptême nautique et découvrir si c'est votre élément, vivez l'expérience d'initiation à la navigation à travers cette activité de 2 heures à travers les criques de Campello guidée par un moniteur professionnel.",
+      "Parrafo1": "Si vous souhaitez faire un baptême nautique et découvrir si c'est votre élément, vivez l'expérience d'initiation à la navigation à travers cette activité de 2 heures à travers les criques de Campello guidée par un moniteur professionnel.",
+      "Parrafo2": "Tarif : 40 euros par personne."
+    }
+  },
+  "alquileres": {
+    "portada": "Locations",
+    "introduccion": "Easy Sailing vous offre la possibilité de louer des bateaux avec ou sans licence Nous sommes une école nautique et ainsi pouvons vous proposer de passer la licence de navigation de façon simple et rapide.",
+    "precio": "Prix",
+    "botonReserva": "RESERVEZ SUR WHATSAPP",
+    "botonFotos": "VOIR PLUS DE PHOTOS",
+    "tabarca1": "Découvrez l'île de Tabarca",
+    "tabarca2": "avec nos bateaux de location",
+    "hulk": {
+      "titulo": "HULK",
+      "modelo": "NEUMÁTICA BOMBARD 500 SUNRIDER 2023",
+      "motor": "MOTEUR SUZUKY 15 CV",
+      "eslora": "5 MÈTRES",
+      "capacidad": "5 PERSONNES",
+      "gasolina2": "10 € (2 Heures)",
+      "gasolina4": "20 € (4 Heures)",
+      "gasolina9": "30 € (9 Heures)",
+      "titulacion": "AUCUN QUALIFICATION REQUIS",
+      "titulo2": "2 HEURES",
+      "precio2": "99 €",
+      "titulo4": "4 HEURES",
+      "precio4": "170 €",
+      "titulo9": "9 HEURES",
+      "precio9": "220 €",
+      "notaPrecio" : "Tous les tarifs incluent 20 minutes de formation supplémentaire par un moniteur nautique",
+      "reserva": "Bonjour, je veux louer le bateau HULK."
+    },
+    "easy_sailing": {
+      "titulo": "EASY SAILING",
+      "modelo": "MOTORA QUICKSILVER 605 OPEN 2018",
+      "motor": "MOTEUR MERCURY 115 CV",
+      "eslora": "6 MÈTRES",
+      "capacidad": "7 PERSONNES",
+      "titulacion": "QUALIFICATION REQUISE : LICENCE DE NAVIGATION",
+      "titulo4": "4 HEURES",
+      "precio4": "200 €",
+      "titulo9": "9 HEURES",
+      "precio9": "300 €",
+      "reserva": "Bonjour, je veux louer le bateau EASY SAILING."
+    },
+    "alma": {
+      "titulo": "ALMA",
+      "modelo": "MOTORA ASTILUX 600 OPEN 2023",
+      "motor": "MOTEUR SUZUKY 115 CV",
+      "eslora": "6 MÈTRES",
+      "capacidad": "8 PERSONNES",
+      "titulacion": "QUALIFICATION REQUISE : LICENCE DE NAVIGATION",
+      "titulo4": "4 HEURES",
+      "precio4": "250 €",
+      "titulo9": "9 HEURES",
+      "precio9": "350 €",
+      "reserva": "Bonjour, je veux louer le bateau ALMA."
+    }
+  },
+  "opiniones": {
+    "titulo": "Ce que disent nos étudiants"
+  },
+  "actividades": {
+    "portada": "Activités",
+    "introduccion": "Easy Sailing vous propose une grande variété d'activités pour profiter de la mer.",
+    "introduccion2": "N'hésitez pas et contactez-nous si vous avez des questions.",
+    "introduccion3": "Nous sommes une entreprise touristique autorisée par la région de Valence.",
+    "precio": "Prix",
+    "botonReserva": "RÉSERVER SUR WHATSAPP",
+    "botonFotos": "VOIR PLUS DE PHOTOS",
+    "incluidoTitulo": "Qui inclus",
+    "localidadTitulo": "Emplacement",
+    "duracionTitulo": "Durée",
+    "capacidadTitulo": "Capacité",
+    "precioTitulo": "Prix",
+    "charterTitulo": "Charters",
+    "expTitulo": "Offrez des expériences",
+    "sportTitulo": "Sports aquatiques",
+    "partyTitulo": "Sports aquatiques",
+    "empresasTitulo": "Autres activités",
+    "ReservaBoton": "Réservez maintenant",
+    "ConsultaBoton": "Vérifier les prix",
+    "charterTabarca" : {
+      "protitulo": "Île de Tabarca",
+      "titulo": "Visite guidée avec skipper",
+      "subtitulo": "Découvrez la merveilleuse Île de Tabarca avec une visite guidée au départ de Campello ou d'Alicante.",
+      "localidad": "De Campello ou Alicante",
+      "incluidos": "Snorkel, Paddle surf et Bateau gonflable avec rame.",
+      "bebida": "Collation + 1 Boisson inclus (eau à volonté).",
+      "actividad": "L'activité comprend Snorkel guidée dans la grotte du Pirate, la possibilité de pratiquer le Paddle surf et l'utilisation du Bateau à rames gonflable dans la mer.",
+      "barco": "Skipper, fuel et nettoyage inclus.",
+      "duracion": "4 Heures",
+      "capacidad": "7 Passagers Max.",
+      "precio": "Prix 375 €",
+      "aclaracion": "Il est possible de prolonger 1 ou 2 heures supplémentaires (30€ de l'heure).",
+      "aclaracion2": "Supplément de 25 € pour les départs d'Alicante.",
+      "aclaracion3": "L'activité est réalisée avec un instructeur de l'école nautique, offrant ainsi l'occasion de profiter de l'expérience pour avoir une introduction à la navigation."
+    },
+    "charterBenidorm": {
+      "protitulo": "Île de Benidorm",
+      "titulo": "Visite guidée avec skipper",
+      "subtitulo": "Profitez des environs de l'île de Benidorm, une réserve naturelle à découvrir, avec notre visite guidée.",
+      "localidad": "De Campello",
+      "incluidos": "Snorkel, Paddle surf et Bateau gonflable avec rame.",
+      "barco": "Skipper, fuel et nettoyage inclus.",
+      "bebida": "Collation + 1 Boisson inclus (eau à volonté).",
+      "actividad": "L'activité comprend la possibilité de pratiquer Snorkel, le Paddle surf et l'utilisation du Bateau à rames gonflable dans la mer.",
+      "duracion": "4 Heures",
+      "capacidad": "Max. 7 Passagers",
+      "precio": "Prix 350 €",
+      "aclaracion": "Il est possible de prolonger 1 ou 2 heures supplémentaires (25€ de l'heure).",
+      "aclaracion2": "L'activité est réalisée avec un instructeur de l'école nautique, offrant ainsi l'occasion de profiter de l'expérience pour avoir une introduction à la navigation."
+    },
+    "expSolCena": {
+      "protitulo": "Coucher de soleil et Dîner ",
+      "titulo": "Coucher de soleil et Dîner à bord",
+      "subtitulo": "Venez vivre cette belle expérience en couple, en famille ou entre amis",
+      "localidad": "De Campello",
+      "incluidos": "Skipper + Fuel + Boissons + Dîner à bord + Nettoyage",
+      "barco": "Skipper, fuel et nettoyage inclus.",
+      "bebida": "Dîner à bord et Boissons",
+      "actividad": "Si vous avez déjà rêvé d'un dîner romantique ou entre amis à bord d'un bateau en regardant le coucher du soleil, ce jour est arrivé. Contactez-nous!",
+      "duracion": "2 Heures",
+      "capacidad": "Max. 7 Passagers",
+      "precio": "150€",
+      "precioTexto": "Privé 2 Passagers",
+      "precio2": " 50€",
+      "precio2Texto": " De 4 Passagers"
+    },
+    "expSolDesayuno": {
+      "protitulo": "Petit-déjeuner en mer",
+      "titulo": "Lever du soleil et Petit-déjeuner en mer",
+      "subtitulo": "Venez vivre cette belle expérience en couple, en famille ou entre amis",
+      "localidad": "De Campello",
+      "incluidos": "Skipper + Fuel + Boissons + Petit-déjeuner à bord + Nettoyage",
+      "barco": "Skipper, fuel et nettoyage inclus.",
+      "bebida": "Petit-déjeuner et Boissons",
+      "actividad": "Le lever du soleil comme vous ne l'avez jamais vécu auparavant, De la beauté et de la tranquillité d'être au milieu de la mer, et accompagné d'un délicieux petit déjeuner à bord.",
+      "duracion": "2 Heures",
+      "capacidad": "Max. 7 Passagers",
+      "precio": "125€",
+      "precioTexto": "Privé 2 Passagers",
+      "precio2": " 35€",
+      "precio2Texto": " De 4 Passagers"
+    },
+    "sportCalasSUP": {
+      "protitulo": "Itinéraire des Criques",
+      "titulo": "Avec Snorkel et Paddel Surf",
+      "subtitulo": "Découvrant les criques de Campello et des environs avec des arrêts pour la pratique du Snorkeling et le Paddle surf.",
+      "localidad": "De Campello",
+      "incluidos": "Skipper + Fuel + Équipement de Snorkel + Collation et 1 Boisson + Nettoyage",
+      "barco": "Skipper, fuel et nettoyage inclus.",
+      "bebida": "Collation + 1 Boisson inclus (eau à volonté).",
+      "actividad": "ESCRIBIR AQUI MEJOR DESCRIPCION DE LA ACTIVIDAD.",
+      "duracion": "2'5 Heures",
+      "capacidad": "Max. 7 Passagers",
+      "precio": "100€",
+      "precioTexto": "Privé 2 Passagers",
+      "precio2": " 35€",
+      "precio2Texto": " De 3 Passagers"
+    },
+    "sportDiving": {
+      "protitulo": "Bateau pour la plongée",
+      "titulo": "Bateau pour la plongée sous-marine",
+      "subtitulo": "Si vous avez la certification de plongée requise et votre propre équipement de plongée, et que vous avez besoin d'un bateau et d'un skipper professionnel pour votre sortie, nous pouvons l'organiser pour vous.",
+      "precio": "Prix selon la plongée à effectuer. Veuillez consulter l'école."
+    },
+    "sportMindful": {
+      "protitulo": "Yoga et Pleine conscience en mer",
+      "titulo": "Yoga et Pleine conscience en mer",
+      "subtitulo": "Prochainemen. Contactez-nous pour rester informé."
+    },
+    "sportVelaCrucero": {
+      "protitulo": "Voile de croisière",
+      "titulo": "Voile de croisière",
+      "subtitulo": "Prochainemen. Contactez-nous pour rester informé."
+    },
+    "partyBachelor": {
+      "titulo": "Enterrements de vie de célibataire",
+      "subtitulo": "Si vous souhaitez célébrer votre enterrement de vie de célibataire en mer, dites-nous ce que vous souhaitez faire et nous l'organiserons pour vous.",
+      "aclaracion": "Nous disposons d'une femme skipper pour les enterrements de vie de célibataire féminins.",
+      "precio": "Selon la charte à réaliser. Veuillez consulter l'école."
+    },
+    "partyBirthday": {
+      "titulo": "Anniversaires en mer",
+      "subtitulo": "Si vous souhaitez surprendre vos amis ou votre famille et célébrer d'une manière différente, contactez-nous.",
+      "aclaracion": "Nous nous occupons de tout: décoration, gâteau et surprises si vous le souhaitez.",
+      "precio": "Selon la charte à réaliser. Veuillez consulter l'école."
+    },
+    "partyPhotos": {
+      "titulo": "Séance photo à bord",
+      "subtitulo": "Si vous souhaitez réaliser une belle séance photo en mer, nous mettons à votre disposition nos bateaux et organisons la charte au lever ou au coucher du soleil selon vos souhaits.",
+      "aclaracion": "Vous pouvez venir avec votre propre photographe ou nous pouvons nous en charger.",
+      "precio": "Selon la charte à réaliser. Veuillez consulter l'école."
+    },
+    "partyRegalo": {
+      "titulo": "Bon Cadeau",
+      "subtitulo": "Si vous souhaitez surprendre votre être cher avec un cadeau original parmi nos activités nautiques, transmettez-nous ses coordonnées et nous préparerons une belle carte cadeau personnalisée.",
+      "aclaracion": "Bon cadeau inclus dans l'activité à offrir sans frais supplémentaires.",
+      "precio": "Bon Cadeau"
+    },
+    "empresas": {
+      "titulo": "Club Entreprises",
+      "subtitulo": "Si vous êtes une entreprise et souhaitez bénéficier de privilèges pour vos employés en matière de formations et d'activités nautiques, nous vous proposons:",
+      "parrafo1": "Formations en titres nautiques adaptées à vos horaires de travail et possibilité de les dispenser dans vos installations.",
+      "parrafo2": "Réductions exclusives sur les formations, les charters et les locations.",
+      "parrafo3": "Organisation de sorties pour les employés et leurs familles."
+    },
+    "customMade": {
+      "titulo": "Activité sur mesure",
+      "subtitulo": "Si vous n'avez pas trouvé ce que vous cherchez parmi nos activités, envoyez-moi un message privé en expliquant l'activité que vous souhaitez réaliser et nous l'adapterons pour vous."
+    }
+  },
+  "contacta": "Contactez-nous"
+
 }

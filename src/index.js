@@ -1,14 +1,21 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import * as ReactDOM from "react-dom/client";
+
 import { BrowserRouter} from "react-router-dom";
+
+import ReactGA from 'react-ga'
+import reportWebVitals from './reportWebVitals'
+
+import './i18n';
+import './index.css'
+
 // import { initializeApp } from 'firebase/app'
 // import { getAnalytics } from 'firebase/analytics'
-import './index.css'
-import reportWebVitals from './reportWebVitals'
-import './i18n';
-// import WrappedApp from "./App";
-import Portada from "./components/portada/Portada";
-import ReactGA from 'react-ga'
+
+
+
+import App from "./App"
+
 
 // const firebaseConfig = {
 //   apiKey: "AIzaSyBlUMLoJB2zMskCgeFb1Ky0NSqH81k4VLc",
@@ -23,13 +30,21 @@ ReactGA.initialize('G-E0N5TTD7QD')
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
+// const host = window.location.hostname;
+// if(host !== "localhost") {
+//   ReactGA.initialize('G-E0N5TTD7QD')
+// }
+//
+// useEffect(() => {
+//   if(host !== "localhost") ReactGA.pageview(window.location.pathname + window.location.search  + window.location.hash);
+// });
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      {/*<WrappedApp />*/}
-      <Portada/>
-    </BrowserRouter>
+      <BrowserRouter>
+            <App/>
+      </BrowserRouter>
   </React.StrictMode>
 );
 

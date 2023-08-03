@@ -10,12 +10,16 @@ const VentanaVideo = ({ embedId }) => (
 			// width="853"
 			// height="480"
 			width="auto"
-			height="auto"
+			height="100%"
 			src={`${embedId}`}
 			frameBorder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowFullScreen
-			title="Easy Sailing"
+			title=""
+			// title={`${titulo}`}
+			autoPlay="1"
+			loop="1"
+			autoPause="0"
 		/>
 	</div>
 )

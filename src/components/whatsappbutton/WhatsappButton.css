@@ -1,0 +1,38 @@
+.floating-button {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25d366;
+    transition: transform 0.3s;
+    z-index: 999;
+}
+
+.floating-button.scrolling {
+    transform: translateX(0) translateY(-10px);
+}
+
+.whatsapp-icon {
+    color: #fff;
+    font-size: 40px;
+}
+
+.whatsapp-icon:hover {
+    font-size: 45px;
+}
+
+@media screen and (max-width: 600px) {
+    .whatsapp-icon {
+        font-size: 26px;
+    }
+    .whatsapp-icon:hover {
+        font-size: 30px;
+    }
+    .floating-button {
+        width: 40px;
+        height: 40px;
+    }
+}
