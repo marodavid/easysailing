@@ -1,9 +1,7 @@
 import React from 'react'
-// import ReactDOM from 'react-dom/client'
 import * as ReactDOM from "react-dom/client";
 
 import { BrowserRouter} from "react-router-dom";
-import { Routes, Route } from 'react-router-dom';
 
 import ReactGA from 'react-ga'
 import reportWebVitals from './reportWebVitals'
@@ -11,26 +9,12 @@ import reportWebVitals from './reportWebVitals'
 import './i18n';
 import './index.css'
 
-
-// import NewCarousel from "./components/googlereviews/NewCarousel";
-import Reviews from "./components/googlereviews/Reviews";
-
 // import { initializeApp } from 'firebase/app'
 // import { getAnalytics } from 'firebase/analytics'
-import { useTranslation, Trans } from 'react-i18next';
-// import WrappedApp from "./App";
-import Portada from './components/portada/Portada'
-import GeneralMenu from "./components/generalmenu/GeneralMenu";
-import MenuBar from "./components/generalmenu/MenuBar";
-import ReviewsCarousel from "./components/googlereviews/ReviewsCarousel";
-import {CarCrash} from "@mui/icons-material";
+
+
 
 import App from "./App"
-import Banner from "./components/banner/Banner2";
-import Actividades from "./components/actividades/Actividades";
-import AnchorSpan from "./components/separadores/AnchorSpan";
-import LicenciaNavegacion from "./components/cursos/LicenciaNavegacion";
-import MenuBanderas from "./components/generalmenu/MenuBanderas";
 
 
 // const firebaseConfig = {
@@ -55,44 +39,11 @@ ReactGA.initialize('G-E0N5TTD7QD')
 //   if(host !== "localhost") ReactGA.pageview(window.location.pathname + window.location.search  + window.location.hash);
 // });
 
-
-
-
-
-// const lngs = {
-//   en: { nativeName: 'English' },
-//   de: { nativeName: 'Deutsch' },
-//   es: { nativeName: 'Español' },
-//   fr: { nativeName: 'Français'},
-// };
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
             <App/>
-
-      {/*<GeneralMenu2 />*/}
-      {/*/!*<Banner />*!/*/}
-      {/*<CardGrid />*/}
-
-      {/*<AnchorSpan />*/}
-      {/*<AnchorSpan />*/}
-      {/*<AnchorSpan />*/}
-      {/*/!*<LicenciaNavegacion />*!/*/}
-      {/*<AnchorSpan />*/}
-      {/*<AnchorSpan />*/}
-
-
-      {/*<Actividades />*/}
-      {/*<AnchorSpan />*/}
-      {/*<AnchorSpan />*/}
-      {/*<AnchorSpan />*/}
-      {/*<AnchorSpan />*/}
-
-      {/*<WhatsappButton />*/}
-
-
       </BrowserRouter>
   </React.StrictMode>
 );

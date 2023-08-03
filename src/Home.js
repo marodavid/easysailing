@@ -1,13 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'
 
-import CardGrid from "./components/cursos/CardGrid";
-import Actividades from "./components/actividades/Actividades";
-import WhatsappButton from "./components/whatsappbutton/WhatsappButton";
-import CookieConsent from "react-cookie-consent";
+// import Banner3 from "./components/banner/Banner3";
+// import imageBanner from './images/banner/nudosBannerResizedHeight6.png'
+// import AnchorSpan from "./components/separadores/AnchorSpan";
+
 import GeneralMenu2 from "./components/generalmenu/GeneralMenu2";
-import Banner3 from "./components/banner/Banner3";
-import imageBanner from './images/banner/nudosBannerResizedHeight6.png'
+import WhoWeAre from "./components/whoweare/WhoWeAre";
+import Cursos from "./components/cursos/Cursos";
+import Alquileres from "./components/alquileres/Alquileres";
+import GoogleReviews from "./components/googlereviews/GoogleReviews";
+import Activities from "./components/actividades/Activities";
+import ContactUs from "./components/contactus/ContactUs";
+import WhatsappButton from "./components/whatsappbutton/WhatsappButton";
+import CookiesConsent from "./components/cookies/CookiesConsent";
 
 
 export default function Home() {
@@ -15,11 +20,14 @@ export default function Home() {
 	return (
 		<>
 			<GeneralMenu2 />
-			{/*<Banner3 imageUrl={imageBanner} />*/}
-			<CardGrid />
-			<Actividades />
+			<WhoWeAre />
+			<Cursos />
+			<Alquileres />
+			<GoogleReviews />
+			<Activities />
+			<ContactUs />
 			<WhatsappButton />
-			<CookieConsent />
+			<CookiesConsent />
 		</>
 	)
 }
