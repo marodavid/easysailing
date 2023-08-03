@@ -1,23 +1,28 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-import {styled} from "@mui/system"
-import { Card, CardContent, CardMedia, Dialog, DialogTitle, Grid, Typography } from '@mui/material';
-
-// import { faHeartCirclePlus } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { styled } from '@mui/system'
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import {
+	Card,
+	CardContent,
+	CardMedia,
+	Dialog,
+	DialogActions,
+	DialogContent,
+	DialogTitle,
+	Grid,
+	Typography
+} from '@mui/material';
 
-
-import DialogContent from "@mui/material/DialogContent";
-import DialogActions from "@mui/material/DialogActions";
-import whatsapplogo from "../alquileres/whatsapp-icon.svg";
-
-import licenciaNavegacion from '../../images/cursos/licenciaNavegacion.png'
-import perVelero from '../../images/cursos/perVelero.jpg'
-import clasesPerfec from '../../images/cursos/clasesPerfeccionamiento.PNG'
-import PazCursoEasySailing from '../../images/cursos/PazCursoEasySailing.jpg'
+import whatsapplogo from '../../images/cursos/whatsapp-icon.svg';
+import licenciaNavegacion from '../../images/cursos/licencianavegacion/licenciaNavegacion.png'
+import perVelero from '../../images/cursos/perVela/perVela.jpg'
+import bautismo from '../../images/cursos/bautismo/bautismo.png'
+import clasesPerfec from '../../images/cursos/clasesPerfeccionamiento/clasesPerfeccionamiento.png'
+import PazCursoEasySailing from '../../images/cursos/LNParticularIntensiva/PazCursoEasySailing.jpg'
+import logoGobierno from '../../images/logosOficiales/logoEscuelaHomologada.png'
+import { DivLineSeparator } from '../actividades/CardComponents';
 
 
 const CardStyled = styled(Card)(({ theme }) => ({
@@ -27,24 +32,20 @@ const CardStyled = styled(Card)(({ theme }) => ({
 	},
 }));
 
-const LinkStyled = styled(Link)(({ theme }) => ({
-	textDecoration: 'none',
-}));
-
 const LinkCursos = styled('a')(({ theme }) => ({
 	textDecoration: 'none',
 }));
 
 const DivTituloCursos = styled('div')(({ theme }) => ({
-	display: "flex",
-	justifyContent: "center",
+	display: 'flex',
+	justifyContent: 'center',
 	marginBottom: '10px',
 	width: '100%',
 }));
 
 const DivHorizontalLine = styled('div')(({ theme }) => ({
-	display: "flex",
-	justifyContent: "center",
+	display: 'flex',
+	justifyContent: 'center',
 	width: '100px',
 	height: '3px',
 	backgroundColor: '#CF9500',
@@ -65,24 +66,15 @@ const TypographyTituloIntroduccion= styled('div')(({ theme }) => ({
 	fontFamily: 'Reem Kufi Fun',
 	fontWeight: '500',
 	textAlign: 'center',
+	fontSize: '20px'
 }));
 
 const DivBoton = styled('div')(({ theme }) => ({
-	display: "flex",
-	justifyContent: "center",
+	display: 'flex',
+	justifyContent: 'center',
 	marginBottom: '10px',
 	marginTop: '15px',
 	width: '100%',
-}));
-
-const TypographyTitulos = styled(Typography)(({ theme }) => ({
-	fontFamily: 'Alegreya SC',
-	color: 'black',
-	[theme.breakpoints.down('md')]: {
-		maxWidth: '100%',
-		fontSize: '100%',
-		// maxHeight: '100%',
-	},
 }));
 
 const BotonWhatsapp = styled('div')(({ theme }) => ({
@@ -93,15 +85,26 @@ const BotonWhatsapp = styled('div')(({ theme }) => ({
 	padding: '15px',
 }));
 
+const LogoIMG = styled('img')(({ theme }) => ({
+	width: '8em',
+	height: '8em',
+	justifyContent:'center',
+	alignItems:'center',
+	[theme.breakpoints.down('md')]:{
+		width: '3em',
+		height: '3em',
+	}
+}));
 
-const Actividades = () => {
 
-	const { t, i18n } = useTranslation();
+const Cursos = () => {
 
-	const [openLNPart, setOpenLNPart] = React.useState(false);
-	const [openPER, setOpenPER] = React.useState(false);
-	const [openClases, setOpenClases] = React.useState(false);
-	const [openIntroNav, setOpenIntroNav] = React.useState(false);
+	const { t } = useTranslation();
+
+	const [openLNPart, setOpenLNPart] = useState(false);
+	const [openPER, setOpenPER] = useState(false);
+	const [openClases, setOpenClases] = useState(false);
+	const [openIntroNav, setOpenIntroNav] = useState(false);
 
 	const handleClickOpenLNPart = () => setOpenLNPart(true);
 	const handleClickOpenPER = () => setOpenPER(true);
@@ -121,7 +124,6 @@ const Actividades = () => {
 			title: t('cursos.LicenciaNavegacion.Titulo'),
 			image: licenciaNavegacion,
 			text: t('cursos.LicenciaNavegacion.Subtitulo'),
-			// enlace: 'licencia_navegacion'
 			enlace: openLicenciaNavegacion,
 		},
 		{
@@ -148,7 +150,7 @@ const Actividades = () => {
 		{
 			id: 5,
 			title: t('cursos.IntroNavegacion.Titulo'),
-			image: 'https://media.sailwiz.com/1098345b71a/licencia-de-navegacion.jpg',
+			image: bautismo,
 			text: t('cursos.IntroNavegacion.Subtitulo'),
 			enlace: handleClickOpenIntroNav,
 		},
@@ -156,106 +158,121 @@ const Actividades = () => {
 
 	return (
 		<>
-			<Grid container id="actividades">
+			<Grid container direction="row"
+						justifyContent="center"
+						alignItems="center"
+						id="cursos">
+
 				<Grid item xs={12} sm={12} md={12} >
 					<DivTituloCursos>
-							<TypographyTituloTexto variant="h1" >
-								{ t('actividades.portada')}
-							</TypographyTituloTexto>
+						<TypographyTituloTexto variant="h1" >
+							{ t('cursos.portada')}
+						</TypographyTituloTexto>
 					</DivTituloCursos>
 				</Grid>
+
 				<Grid item xs={12} sm={12} md={12} >
 					<DivTituloCursos >
 					<DivHorizontalLine />
 					</DivTituloCursos>
 				</Grid>
 
-				<Grid item xs={2} sm={2} md={3} />
-				<Grid item xs={8} sm={8} md={6} >
-					<TypographyTituloIntroduccion variant="body1" >
-						{ t('actividades.introduccion')}
-					</TypographyTituloIntroduccion>
-					<TypographyTituloIntroduccion variant="body1" >
-						{ t('actividades.introduccion2')}
-					</TypographyTituloIntroduccion>
 
+				<Grid item xs={3} sm={3} md={3} sx={{display: {xl: 'none', lg: 'none', md: 'none', sm: 'none'}}}/>
+				<Grid item xs={6} sm={6} md={6} sx={{display: {xl: 'none', lg: 'none', md: 'none', sm: 'none'}}}>
+					<div align="center"><LogoIMG src={logoGobierno} alt={'Escuela homologada'} /></div>
 				</Grid>
-				<Grid item xs={2} sm={2} md={3} />
+				<Grid item xs={3} sm={3} md={3} sx={{display: {xl: 'none', lg: 'none', md: 'none', sm: 'none'}}}/>
+
+				<Grid item xs={2} sm={2} sx={{display: {xl: 'none', lg: 'none', md: 'none', sm: 'none'}}}/>
+				<Grid item xs={8} sm={8} sx={{display: {xl: 'none', lg: 'none', md: 'none', sm: 'none'}}} >
+					<TypographyTituloIntroduccion variant="body1" >
+						{ t('cursos.introduccion')}
+						{' '}
+						{ t('cursos.introduccion2')}
+						<DivLineSeparator />
+						{ t('cursos.introduccion3')}
+						<DivLineSeparator />
+						{ t('cursos.introduccion4')}
+					</TypographyTituloIntroduccion>
+				</Grid>
+				<Grid item xs={2} sm={2}  sx={{display: {xl: 'none', lg: 'none', md: 'none', sm: 'none'}}} />
+
+				<Grid item xs={2} sm={2} md={2} lg={2} xl={2}  sx={{display: {xs: 'none', sm: 'inline-block', md: 'inline-block', lg: 'inline-block', xl: 'inline-block'}}} />
+				<Grid item xs={1.5} sm={1.5} md={1.5} lg={1.5} xl={1.5} sx={{display: {xs: 'none', sm: 'inline-block', md: 'inline-block', lg: 'inline-block', xl: 'inline-block'}}} >
+					<div align="center"><LogoIMG src={logoGobierno} alt={'Escuela homologada'} /></div>
+				</Grid>
+				<Grid item xs={5} sm={5} md={5}   sx={{display: {xs: 'none', sm: 'inline-block', md: 'inline-block', lg: 'inline-block', xl: 'inline-block'}}} >
+					<TypographyTituloIntroduccion variant="body1" >
+						{ t('cursos.introduccion')}
+						<br />
+						{ t('cursos.introduccion2')}
+						<DivLineSeparator />
+						{ t('cursos.introduccion3')}
+						<DivLineSeparator />
+						{ t('cursos.introduccion4')}
+					</TypographyTituloIntroduccion>
+				</Grid>
+				<Grid item xs={1.5} sm={1.5} md={1.5}  sx={{display: {xs: 'none', sm: 'inline-block', md: 'inline-block', lg: 'inline-block', xl: 'inline-block'}}} >
+					{/*<div align="center"><LogoIMG src={logoTurismo} alt={'Turismo'} /></div>*/}
+				</Grid>
+				<Grid item xs={2} sm={2} md={2}  sx={{display: {xs: 'none', sm: 'inline-block', md: 'inline-block', lg: 'inline-block', xl: 'inline-block'}}} />
+
 				<Grid item xs={12} sm={12} md={12} >
 					<DivSeparator />
 				</Grid>
 
 				<Grid item xs={12} sm={12} md={2} />
-
-
-			<Grid item xs={12} sm={12} md={8} >
-				<Grid container spacing={3}>
-					{cards.map((card) => (
-						<>
-						<Grid item xs={1} sm={0.5} md={0.25} />
-						<Grid item xs={10} sm={4} md={3.5} key={card.id}>
-							<LinkCursos onClick={card.enlace} >
-								<CardStyled>
-								<CardMedia
-									component="img"
-									alt={card.title}
-									height="200"
-									image={card.image}
-								/>
-								<CardContent>
-									<Typography variant="h5" component="div" gutterBottom >
-										{card.title}
-									</Typography>
-									<Typography variant="body2" color="text.secondary">
-										{card.text}
-									</Typography>
-									<DivBoton>
-										{/*<FontAwesomeIcon icon={faHeartCirclePlus} color={'black'} size="lg" />*/}
-										{/*<FontAwesomeIcon icon={light("circle-plus")} />*/}
-										<AddCircleOutlineIcon fontSize={'large'} />
-									</DivBoton>
-								</CardContent>
-								</CardStyled>
-							</LinkCursos>
-						</Grid>
-						<Grid item xs={1} sm={0.5} md={0.25}/>
-						</>
-					))}
+				<Grid item xs={12} sm={12} md={8} >
+					<Grid container spacing={3}>
+						{cards.map((card) => (
+							<>
+							<Grid item xs={1} sm={0.5} md={0.25} />
+							<Grid item xs={10} sm={5} md={3.5} key={card.id}>
+								<LinkCursos onClick={card.enlace} >
+									<CardStyled>
+									<CardMedia
+										component="img"
+										alt={card.title}
+										height="200"
+										image={card.image}
+									/>
+									<CardContent>
+										<Typography variant="h5" component="div" gutterBottom >
+											{card.title}
+										</Typography>
+										<Typography variant="body1" color="text.secondary">
+											{card.text}
+										</Typography>
+										<DivBoton>
+											<AddCircleOutlineIcon fontSize={'large'} />
+										</DivBoton>
+									</CardContent>
+									</CardStyled>
+								</LinkCursos>
+							</Grid>
+							<Grid item xs={1} sm={0.5} md={0.25}/>
+							</>
+						))}
+					</Grid>
 				</Grid>
-			</Grid>
-			<Grid item xs={12} sm={12} md={2} />
+				<Grid item xs={12} sm={12} md={2} />
 
+				<Grid item xs={12} sm={12} md={12} >
+					<DivSeparator />
+				</Grid>
 
-			<Grid item xs={12} sm={12} md={12} >
-				<DivSeparator />
-			</Grid>
-			<Grid item xs={12} sm={12} md={12} lg={12} >
-				{/*<DivBoton>*/}
-				{/*	/!*<a*!/*/}
-				{/*	/!*	href={`https://api.whatsapp.com/send?phone=34624158428&amp;text=${t('cursos.LicenciaNavegacion.Reserva')}`}*!/*/}
-				{/*	/!*	target="_blank"*!/*/}
-				{/*	/!*	rel="noopener noreferrer"*!/*/}
-				{/*	/!*	>*!/*/}
-				{/*	<Button size='large' variant='outlined' sx={{ bgcolor: '#CF9500', color: 'white' }} onClick={null}>*/}
-				{/*		{ t('cursos.LicenciaNavegacion.ReservaBoton') }*/}
-				{/*	</Button>*/}
-				{/*	/!*</a>*!/*/}
-				{/*</DivBoton>*/}
-			</Grid>
-			<Grid item xs={12} sm={12} md={12} >
-				<DivSeparator />
-			</Grid>
+				<Grid item xs={12} sm={12} md={12} >
+					<DivSeparator />
+				</Grid>
 
-			<Grid item xs={12} sm={12} md={12} >
-				<hr/>
-				<DivSeparator />
-			</Grid>
-
+				<Grid item xs={12} sm={12} md={12} >
+					<hr/>
+					<DivSeparator />
+				</Grid>
 
 			</Grid>
-			{/*<Outlet />*/}
 
-			{/*<LN Particular />*/}
 			<Dialog
 				open={openLNPart}
 				onClose={handleCloseLNPart}
@@ -266,13 +283,6 @@ const Actividades = () => {
 					</TypographyTituloIntroduccion>
 				</DialogTitle>
 				<DialogContent>
-					{/*<TypographyTituloIntroduccion variant="body1" >*/}
-					{/*	{ t('cursos.LnParticular.Subtitulo')}*/}
-					{/*</TypographyTituloIntroduccion>*/}
-					{/*<TypographyTituloIntroduccion variant="body1" >*/}
-					{/*	{ t('cursos.LnParticular.Parrafo1')}*/}
-					{/*</TypographyTituloIntroduccion>*/}
-					{/*<DivSeparator />*/}
 					<TypographyTituloIntroduccion variant="body1" >
 						{ t('cursos.LnParticular.Parrafo2')}
 					</TypographyTituloIntroduccion>
@@ -296,10 +306,8 @@ const Actividades = () => {
 						</BotonWhatsapp>
 					</a>
 					</DivBoton>
-					{/*<Button onClick={handleCloseLNPart}>Close</Button>*/}
 				</DialogActions>
 			</Dialog>
-
 
 			{/*<PER />*/}
 			<Dialog
@@ -331,7 +339,6 @@ const Actividades = () => {
 						</BotonWhatsapp>
 					</a>
 					</DivBoton>
-					{/*<Button onClick={handleClosePER}>Close</Button>*/}
 				</DialogActions>
 			</Dialog>
 
@@ -375,7 +382,6 @@ const Actividades = () => {
 						</BotonWhatsapp>
 					</a>
 					</DivBoton>
-					{/*<Button onClick={handleClosePER}>Close</Button>*/}
 				</DialogActions>
 			</Dialog>
 
@@ -409,7 +415,6 @@ const Actividades = () => {
 						</BotonWhatsapp>
 					</a>
 					</DivBoton>
-					{/*<Button onClick={handleClosePER}>Close</Button>*/}
 				</DialogActions>
 			</Dialog>
 
@@ -417,4 +422,4 @@ const Actividades = () => {
 	);
 };
 
-export default Actividades;
+export default Cursos;
