@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom/client";
 
 import { BrowserRouter} from "react-router-dom";
 
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga4'
 import reportWebVitals from './reportWebVitals'
 
 import './i18n';
@@ -28,7 +28,8 @@ import App from "./App"
 //   appId: "1:872348962613:web:8a12df83f1c5b43a34c67c",
 //   measurementId: "G-E0N5TTD7QD"
 // };
-ReactGA.initialize('G-E0N5TTD7QD')
+ReactGA.initialize('G-C84GRT7RY8')
+// ReactGA.initialize('G-E0N5TTD7QD')
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 

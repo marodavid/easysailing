@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import LicenciaNavegacion from "./components/cursos/LicenciaNavegacion";
 import Home from "./Home";
 
@@ -8,7 +8,7 @@ import Home from "./Home";
             parent route paths, and nested route elements render inside
             parent route elements. See the note about <Outlet> below. */
 
-ReactGA.initialize('G-C84GRT7RY8')
+// ReactGA.initialize('G-C84GRT7RY8')
 
 export default function App() {
   return (
