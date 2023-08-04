@@ -8,7 +8,7 @@ import Home from "./Home";
             parent route paths, and nested route elements render inside
             parent route elements. See the note about <Outlet> below. */
 
-ReactGA.initialize('G-E0N5TTD7QD')
+ReactGA.initialize('G-C84GRT7RY8')
 
 export default function App() {
   return (
