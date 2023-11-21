@@ -18,6 +18,7 @@ import {
 import whatsapplogo from '../../images/cursos/whatsapp-icon.svg';
 import licenciaNavegacion from '../../images/cursos/licencianavegacion/licenciaNavegacion.png'
 import perVelero from '../../images/cursos/perVela/perVela.jpg'
+import pnbVelero from '../../images/cursos/PNB/pnbFoto.jpg'
 import bautismo from '../../images/cursos/bautismo/bautismo.png'
 import clasesPerfec from '../../images/cursos/clasesPerfeccionamiento/clasesPerfeccionamiento.png'
 import PazCursoEasySailing from '../../images/cursos/LNParticularIntensiva/PazCursoEasySailing.jpg'
@@ -69,6 +70,13 @@ const TypographyTituloIntroduccion= styled('div')(({ theme }) => ({
 	fontSize: '20px'
 }));
 
+const TypographyTituloIntroduccionPNB= styled('div')(({ theme }) => ({
+	fontFamily: 'Reem Kufi Fun',
+	fontWeight: '500',
+	textAlign: 'left',
+	fontSize: '20px'
+}));
+
 const DivBoton = styled('div')(({ theme }) => ({
 	display: 'flex',
 	justifyContent: 'center',
@@ -103,16 +111,19 @@ const Cursos = () => {
 
 	const [openLNPart, setOpenLNPart] = useState(false);
 	const [openPER, setOpenPER] = useState(false);
+	const [openPNB, setOpenPNB] = useState(false);
 	const [openClases, setOpenClases] = useState(false);
 	const [openIntroNav, setOpenIntroNav] = useState(false);
 
 	const handleClickOpenLNPart = () => setOpenLNPart(true);
 	const handleClickOpenPER = () => setOpenPER(true);
+	const handleClickOpenPNB = () => setOpenPNB(true);
 	const handleClickOpenClases = () => setOpenClases(true);
 	const handleClickOpenIntroNav = () => setOpenIntroNav(true);
 
 	const handleCloseLNPart = () => setOpenLNPart(false);
 	const handleClosePER = () => setOpenPER(false);
+	const handleClosePNB = () => setOpenPNB(false);
 	const handleCloseClases = () => setOpenClases(false);
 	const handleCloseIntroNav = () => setOpenIntroNav(false);
 
@@ -135,20 +146,27 @@ const Cursos = () => {
 		},
 		{
 			id: 3,
-			title: t('cursos.PerVela.Titulo'),
-			image: perVelero,
-			text: t('cursos.PerVela.Subtitulo'),
-			enlace: handleClickOpenPER,
-		},
-		{
-			id: 4,
 			title: t('cursos.ClasesPerfec.Titulo'),
 			image: clasesPerfec,
 			text: t('cursos.ClasesPerfec.Subtitulo'),
 			enlace: handleClickOpenClases,
 		},
 		{
+			id: 4,
+			title: t('cursos.PerVela.Titulo'),
+			image: perVelero,
+			text: t('cursos.PerVela.Subtitulo'),
+			enlace: handleClickOpenPER,
+		},
+		{
 			id: 5,
+			title: t('cursos.PNB.Titulo'),
+			image: pnbVelero,
+			text: t('cursos.PNB.Subtitulo'),
+			enlace: handleClickOpenPNB,
+		},
+		{
+			id: 6,
 			title: t('cursos.IntroNavegacion.Titulo'),
 			image: bautismo,
 			text: t('cursos.IntroNavegacion.Subtitulo'),
@@ -335,6 +353,68 @@ const Cursos = () => {
 							<img src={whatsapplogo} alt={'icon'} style={{paddingLeft: '0.5em'}}/>
 							<span style={{color: 'white', alignItems: 'strecht',paddingLeft: '1em'}}>
 									{t('cursos.PerVela.ReservaBoton')}
+							</span>
+						</BotonWhatsapp>
+					</a>
+					</DivBoton>
+				</DialogActions>
+			</Dialog>
+
+			{/*<PNB />*/}
+			<Dialog
+				open={openPNB}
+				onClose={handleClosePNB}
+			>
+				<DialogTitle>
+					<TypographyTituloIntroduccion style={{fontWeight: 'bold'}} variant="h5" >
+						{ t('cursos.PNB.Titulo')}
+					</TypographyTituloIntroduccion>
+				</DialogTitle>
+				<DialogContent>
+					<TypographyTituloIntroduccionPNB variant="body1" >
+						{ t('cursos.PNB.Subtitulo')}
+					</TypographyTituloIntroduccionPNB>
+					<DivSeparator />
+					<TypographyTituloIntroduccionPNB variant="body1" >
+						{ t('cursos.PNB.Parrafo1')}
+					</TypographyTituloIntroduccionPNB>
+
+					<ul className="a">
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PNB.Parrafo2')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PNB.Parrafo3')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PNB.Parrafo4')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PNB.Parrafo5')}</li>
+					</ul>
+
+					<TypographyTituloIntroduccion variant="body1" >
+						{ t('cursos.PNB.Parrafo6')}
+					</TypographyTituloIntroduccion>
+					<TypographyTituloIntroduccion variant="body1" >
+						{ t('cursos.PNB.Parrafo7')}
+					</TypographyTituloIntroduccion>
+					<DivSeparator />
+					<TypographyTituloIntroduccion variant="body1" >
+						{ t('cursos.PNB.Precios')}
+					</TypographyTituloIntroduccion>
+					<ul className="a">
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PNB.Parrafo8')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PNB.Parrafo9')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PNB.Parrafo10')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PNB.Parrafo11')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PNB.Parrafo12')}</li>
+					</ul>
+					<DivSeparator />
+					<TypographyTituloIntroduccion variant="body1" >
+						{ t('cursos.PNB.Parrafo13')}
+					</TypographyTituloIntroduccion>
+				</DialogContent>
+				<DialogActions >
+					<DivBoton>
+					<a href={`https://api.whatsapp.com/send?phone=34624158428&amp;text=${t('cursos.PNB.Reserva')}`} target="_blank" rel="noopener" style={{textDecoration: 'none'}}>
+						<BotonWhatsapp style={{backgroundColor:'#25d366'}}>
+							<img src={whatsapplogo} alt={'icon'} style={{paddingLeft: '0.5em'}}/>
+							<span style={{color: 'white', alignItems: 'strecht',paddingLeft: '1em'}}>
+									{t('cursos.PNB.ReservaBoton')}
 							</span>
 						</BotonWhatsapp>
 					</a>

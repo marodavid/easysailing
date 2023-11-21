@@ -79,6 +79,27 @@
       "Parrafo1": "Nous faisons tout notre possible pour amener la pratique de la voile à El Campello.",
       "Parrafo2": "Si vous êtes intéressé à recevoir des cours de voiliers , envoyez-nous un message et nous vous contacterons dès que cette modalité sera disponible."
     },
+    "PNB": {
+      "Reserva": "Bonjour, je souhaite plus d'informations sur PNB - Basic Navigation Pattern",
+      "ReservaBoton": "Envoyer un message",
+      "Titulo": "PNB - Patron de Navigation de Base",
+      "Subtitulo": "Certification permettant de piloter des embarcations jusqu'à 8 mètres de long et de naviguer jusqu'à 5 milles nautiques de la côte, de jour comme de nuit, et sans limite de puissance.",
+      "Parrafo1": "Exigences",
+      "Parrafo2": "À partir de 16 ans.",
+      "Parrafo3": "Réussir l'examen théorique en espagnol. L'examen comprend 27 questions à choix multiples avec 4 réponses possibles, dont 17 doivent être correctes.",
+      "Parrafo4": "Effectuer 4 heures de pratique en tant qu'opérateur radio à courte portée.",
+      "Parrafo5": "Effectuer 8 heures de pratique en navigation et sécurité.",
+      "Parrafo6": "Le cours se compose de 6 thèmes.",
+      "Parrafo7": "La durée moyenne de préparation de ce cours est de 4 semaines.",
+      "Precios": "DES PRIX",
+      "Parrafo8": "Cours PER complet (théorie + radio + pratique moteur): 295 EUR",
+      "Parrafo9": "La préparation à l'examen théorique uniquement: 100 EUR",
+      "Parrafo10": "La pratique radio uniquement : 100 EUR.",
+      "Parrafo11": "La pratique moteur uniquement : 150 EUR",
+      "Parrafo12": "La radio + la pratique moteur : 200 EUR",
+      "Parrafo13": "*Ces prix n'incluent pas les frais d'examen."
+    },
+
     "LnParticular": {
       "Reserva": "Bonjour, je souhaite réserver pour votre Licence de Navigation Privé Intensif.",
       "ReservaBoton": "Réservez maintenant",

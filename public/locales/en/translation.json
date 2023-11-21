@@ -79,6 +79,26 @@
       "Parrafo1": "We are doing everything possible to bring cruising sailing to Campello (Alicante).",
       "Parrafo2": "If you are interested in receiving cruise sailing classes, send us a message and we will contact you as soon as this modality is available."
     },
+    "PNB": {
+      "Reserva": "Hello, I want more information about PNB - Basic Navigation Pattern",
+      "ReservaBoton": "Send message",
+      "Titulo": "PNB - Basic Navigation Pattern",
+      "Subtitulo": "This certification enables you to operate vessels of up to 8 meters in length and navigate up to 5 nautical miles off the coast, both during daylight and nighttime, with no power limit.",
+      "Parrafo1": "Requirements",
+      "Parrafo2": "Minimum age of 16.",
+      "Parrafo3": "Pass the theoretical exam in Spanish. The exam consists of 27 multiple-choice questions with 4 possible answers, and you must answer 17 of them correctly.",
+      "Parrafo4": "Complete 4 hours of short-range radio operator practical training.",
+      "Parrafo5": "Complete 8 hours of navigation and safety practical training.",
+      "Parrafo6": "The course covers 6 topics.",
+      "Parrafo7": "The average preparation time for this course is 4 weeks.",
+      "Precios": "PRICES",
+      "Parrafo8": "Full PNB course (theory + radio + motor practical): 295 EUR.",
+      "Parrafo9": "Theory exam preparation only: 100 EUR.",
+      "Parrafo10": "Radio practical training only: 100 EUR.",
+      "Parrafo11": "Motor practical training only: 150 EUR.",
+      "Parrafo12": "Radio + Motor practical training: 200 EUR.",
+      "Parrafo13": "*These prices do not include exam fees."
+    },
     "LnParticular": {
       "Reserva": "Hello, I want to book for your Intensive private Navigation Licence.",
       "ReservaBoton": "Book now",
