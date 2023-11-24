@@ -153,17 +153,18 @@ const Cursos = () => {
 		},
 		{
 			id: 4,
-			title: t('cursos.PerVela.Titulo'),
-			image: perVelero,
-			text: t('cursos.PerVela.Subtitulo'),
-			enlace: handleClickOpenPER,
-		},
-		{
-			id: 5,
 			title: t('cursos.PNB.Titulo'),
 			image: pnbVelero,
 			text: t('cursos.PNB.Subtitulo'),
 			enlace: handleClickOpenPNB,
+		},
+
+		{
+			id: 5,
+			title: t('cursos.PerVela.Titulo'),
+			image: perVelero,
+			text: t('cursos.PerVela.Subtitulo'),
+			enlace: handleClickOpenPER,
 		},
 		{
 			id: 6,
