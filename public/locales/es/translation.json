@@ -72,12 +72,27 @@
       }
     },
     "PerVela": {
-      "Reserva": "Hola, quiero más información sobre el curso de PER - Patrón de embarcaciones recreativas.",
+      "Reserva": "Hola, quiero más información sobre el curso de PER - Patrón de Embarcaciones de Recreo.",
       "ReservaBoton": "Enviar Mensaje",
-      "Titulo": "P.E.R.",
+      "Titulo": "PER - Patrón de Embarcaciones de Recreo",
       "Subtitulo": "Titulación que habilita para llevar embarcaciones a motor de hasta 15 metros de eslora y navegar hasta 12 millas de la costa, tanto en navegación diurna como nocturna y sin límite de potencia.",
-      "Parrafo1": "Estamos haciendo todo lo posible para traer la vela de crucero a Campello.",
-      "Parrafo2": "Si estás interesado en recibir clases de vela de crucero, mandanos un mensaje y te contactaremos tan pronto tengamos disponible esta modalidad."
+      "Parrafo1": "Requisitos",
+      "Parrafo2": "Ser mayor de edad.",
+      "Parrafo3": "Aprobar el examen teórico en español + carta náutica: El examen consta de 45 preguntas tipo test con 4 posibles respuestas, teniendo que contestar 32 de ellas correctamente.",
+      "Parrafo4": "Realizar 12 horas de prácticas de radio – operador de corto alcance.",
+      "Parrafo5": "Realizar 16 horas de prácticas de navegación y seguridad.",
+      "Parrafo6": "El curso consta de 11 temas.",
+      "Parrafo7": "La media de preparación de este curso es de 8 semanas.",
+      "Parrafo8": "Una vez se obtiene esta titulación, es posible realizar prácticas para obtener la habilitación a vela y la ampliación de atribuciones para navegar a Islas Baleares.",
+      "Parrafo9": "La preparación de este curso la realizamos online y tutelada.",
+      "Parrafo10": "Vamos de la mano contigo para garantizar unos buenos resultados.",
+      "Precios": "PRECIOS",
+      "Parrafo11": "Curso PER completo (teórico + rádio + prácticas motor): 395EUR.",
+      "Parrafo12": "Solo preparación examen teórico: 150 EUR.",
+      "Parrafo13": "Solo prácticas de radio: 100 EUR.",
+      "Parrafo14": "Solo prácticas de motor: 250 EUR.",
+      "Parrafo15": "Radio + Prácticas de motor: 300 EUR.",
+      "Parrafo16": "*Estos precios no incluyen las tasas de examen."
     },
     "PNB": {
       "Reserva": "Hola, quiero más información sobre el curso de PNB - Patron de Navegación básica.",

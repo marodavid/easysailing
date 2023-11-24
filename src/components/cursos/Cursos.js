@@ -333,17 +333,57 @@ const Cursos = () => {
 				onClose={handleClosePER}
 			>
 				<DialogTitle>
-					<TypographyTituloIntroduccion variant="h5" >
-						{ t('cursos.PerVela.Subtitulo')}
+					<TypographyTituloIntroduccion style={{fontWeight: 'bold'}} variant="h5" >
+						{ t('cursos.PerVela.Titulo')}
 					</TypographyTituloIntroduccion>
 				</DialogTitle>
 				<DialogContent>
-					<TypographyTituloIntroduccion variant="body1" >
+					<TypographyTituloIntroduccionPNB variant="body1" >
+						{ t('cursos.PerVela.Subtitulo')}
+					</TypographyTituloIntroduccionPNB>
+					<DivSeparator />
+					<TypographyTituloIntroduccionPNB variant="body1" >
 						{ t('cursos.PerVela.Parrafo1')}
+					</TypographyTituloIntroduccionPNB>
+
+					<ul className="a">
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PerVela.Parrafo2')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PerVela.Parrafo3')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PerVela.Parrafo4')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PerVela.Parrafo5')}</li>
+					</ul>
+
+					<TypographyTituloIntroduccion variant="body1" >
+						{ t('cursos.PerVela.Parrafo6')}
+					</TypographyTituloIntroduccion>
+					<TypographyTituloIntroduccion variant="body1" >
+						{ t('cursos.PerVela.Parrafo7')}
 					</TypographyTituloIntroduccion>
 					<DivSeparator />
+					<TypographyTituloIntroduccionPNB variant="body1" >
+						{ t('cursos.PerVela.Parrafo8')}
+					</TypographyTituloIntroduccionPNB>
+					<DivSeparator />
+					<TypographyTituloIntroduccionPNB variant="body1" >
+						{ t('cursos.PerVela.Parrafo9')}
+					</TypographyTituloIntroduccionPNB>
+					<TypographyTituloIntroduccionPNB variant="body1" >
+						{ t('cursos.PerVela.Parrafo10')}
+					</TypographyTituloIntroduccionPNB>
+					<DivSeparator />
 					<TypographyTituloIntroduccion variant="body1" >
-						{ t('cursos.PerVela.Parrafo2')}
+						{ t('cursos.PerVela.Precios')}
+					</TypographyTituloIntroduccion>
+					<ul className="a">
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PerVela.Parrafo11')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PerVela.Parrafo12')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PerVela.Parrafo13')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PerVela.Parrafo14')}</li>
+						<li style={{listStyleType: 'circle'}}>{ t('cursos.PerVela.Parrafo15')}</li>
+					</ul>
+					<DivSeparator />
+					<TypographyTituloIntroduccion variant="body1" >
+						{ t('cursos.PerVela.Parrafo16')}
 					</TypographyTituloIntroduccion>
 				</DialogContent>
 				<DialogActions >
